@@ -170,7 +170,7 @@
           "network": "BSDET"
         }
       ],
-      "gameState": "LIVE",
+      "gameState": "OFF",
       "gameScheduleState": "OK",
       "awayTeam": {
         "id": 17,
@@ -178,8 +178,8 @@
           "default": "Red Wings"
         },
         "abbrev": "DET",
-        "score": 1,
-        "sog": 7,
+        "score": 5,
+        "sog": 29,
         "logo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg"
       },
       "homeTeam": {
@@ -188,39 +188,27 @@
           "default": "Bruins"
         },
         "abbrev": "BOS",
-        "score": 0,
-        "sog": 3,
+        "score": 2,
+        "sog": 27,
         "logo": "https://assets.nhle.com/logos/nhl/svg/BOS_light.svg"
       },
       "gameCenterLink": "/gamecenter/det-vs-bos/2023/11/24/2023020293",
+      "threeMinRecap": "/video/recap-red-wings-at-bruins-11-24-23-6341726601112",
       "clock": {
-        "timeRemaining": "10:24",
-        "secondsRemaining": 624,
-        "running": true,
+        "timeRemaining": "00:00",
+        "secondsRemaining": 0,
+        "running": false,
         "inIntermission": false
       },
       "neutralSite": false,
       "venueTimezone": "US/Eastern",
-      "period": 1,
+      "period": 3,
       "periodDescriptor": {
-        "number": 1,
+        "number": 3,
         "periodType": "REG"
       },
-      "situation": {
-        "homeTeam": {
-          "abbrev": "BOS",
-          "situationDescriptions": [
-            "PP"
-          ],
-          "strength": 5
-        },
-        "awayTeam": {
-          "abbrev": "DET",
-          "strength": 4
-        },
-        "situationCode": "1451",
-        "timeRemaining": "00:21",
-        "secondsRemaining": 21
+      "gameOutcome": {
+        "lastPeriodType": "REG"
       },
       "goals": [
         {
@@ -241,6 +229,120 @@
           "homeScore": 0,
           "strength": "PP",
           "highlightClip": 6341721550112
+        },
+        {
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "15:01",
+          "playerId": 8479337,
+          "name": {
+            "default": "A. DeBrincat"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/DET/8479337.png",
+          "teamAbbrev": "DET",
+          "goalsToDate": 12,
+          "awayScore": 2,
+          "homeScore": 0,
+          "strength": "EV",
+          "highlightClip": 6341721966112
+        },
+        {
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "03:00",
+          "playerId": 8478498,
+          "name": {
+            "default": "J. DeBrusk"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/BOS/8478498.png",
+          "teamAbbrev": "BOS",
+          "goalsToDate": 3,
+          "awayScore": 2,
+          "homeScore": 1,
+          "strength": "PP",
+          "highlightClip": 6341721615112
+        },
+        {
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "13:24",
+          "playerId": 8477952,
+          "name": {
+            "default": "R. Fabbri"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/DET/8477952.png",
+          "teamAbbrev": "DET",
+          "goalsToDate": 4,
+          "awayScore": 3,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341723754112
+        },
+        {
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "04:12",
+          "playerId": 8478046,
+          "name": {
+            "default": "D. Heinen"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/BOS/8478046.png",
+          "teamAbbrev": "BOS",
+          "goalsToDate": 2,
+          "awayScore": 3,
+          "homeScore": 2,
+          "strength": "EV",
+          "highlightClip": 6341724521112
+        },
+        {
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "05:08",
+          "playerId": 8477946,
+          "name": {
+            "default": "D. Larkin"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/DET/8477946.png",
+          "teamAbbrev": "DET",
+          "goalsToDate": 7,
+          "awayScore": 4,
+          "homeScore": 2,
+          "strength": "PP",
+          "highlightClip": 6341723719112
+        },
+        {
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "18:15",
+          "playerId": 8474102,
+          "name": {
+            "default": "D. Perron"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/DET/8474102.png",
+          "teamAbbrev": "DET",
+          "goalsToDate": 5,
+          "awayScore": 5,
+          "homeScore": 2,
+          "strength": "EV",
+          "highlightClip": 6341727383112
         }
       ]
     },
@@ -275,7 +377,7 @@
           "network": "NHLN"
         }
       ],
-      "gameState": "LIVE",
+      "gameState": "OFF",
       "gameScheduleState": "OK",
       "awayTeam": {
         "id": 3,
@@ -283,8 +385,8 @@
           "default": "Rangers"
         },
         "abbrev": "NYR",
-        "score": 2,
-        "sog": 5,
+        "score": 3,
+        "sog": 19,
         "logo": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg"
       },
       "homeTeam": {
@@ -293,39 +395,27 @@
           "default": "Flyers"
         },
         "abbrev": "PHI",
-        "score": 0,
-        "sog": 3,
+        "score": 1,
+        "sog": 37,
         "logo": "https://assets.nhle.com/logos/nhl/svg/PHI_light.svg"
       },
       "gameCenterLink": "/gamecenter/nyr-vs-phi/2023/11/24/2023020294",
+      "threeMinRecap": "/video/recap-rangers-at-flyers-11-24-23-6341726697112",
       "clock": {
-        "timeRemaining": "11:32",
-        "secondsRemaining": 692,
-        "running": true,
+        "timeRemaining": "00:00",
+        "secondsRemaining": 0,
+        "running": false,
         "inIntermission": false
       },
       "neutralSite": false,
       "venueTimezone": "US/Eastern",
-      "period": 1,
+      "period": 3,
       "periodDescriptor": {
-        "number": 1,
+        "number": 3,
         "periodType": "REG"
       },
-      "situation": {
-        "homeTeam": {
-          "abbrev": "PHI",
-          "strength": 4
-        },
-        "awayTeam": {
-          "abbrev": "NYR",
-          "situationDescriptions": [
-            "PP"
-          ],
-          "strength": 5
-        },
-        "situationCode": "1541",
-        "timeRemaining": "01:16",
-        "secondsRemaining": 76
+      "gameOutcome": {
+        "lastPeriodType": "REG"
       },
       "goals": [
         {
@@ -365,6 +455,44 @@
           "homeScore": 0,
           "strength": "EV",
           "highlightClip": 6341721739112
+        },
+        {
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "07:41",
+          "playerId": 8476459,
+          "name": {
+            "default": "M. Zibanejad"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/NYR/8476459.png",
+          "teamAbbrev": "NYR",
+          "goalsToDate": 4,
+          "awayScore": 3,
+          "homeScore": 0,
+          "strength": "EV",
+          "highlightClip": 6341723255112
+        },
+        {
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "17:39",
+          "playerId": 8476461,
+          "name": {
+            "default": "S. Couturier"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/PHI/8476461.png",
+          "teamAbbrev": "PHI",
+          "goalsToDate": 5,
+          "awayScore": 3,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341723076112
         }
       ]
     },
@@ -393,7 +521,7 @@
           "network": "NBCSCH"
         }
       ],
-      "gameState": "FUT",
+      "gameState": "OFF",
       "gameScheduleState": "OK",
       "awayTeam": {
         "id": 10,
@@ -401,34 +529,9 @@
           "default": "Maple Leafs"
         },
         "abbrev": "TOR",
-        "record": "10-5-2",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/TOR_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.5000"
-          },
-          {
-            "providerId": 4,
-            "value": "1.3700"
-          },
-          {
-            "providerId": 2,
-            "value": "-152.0000"
-          },
-          {
-            "providerId": 9,
-            "value": "-270.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "-268.0000"
-          },
-          {
-            "providerId": 6,
-            "value": "1.6300"
-          }
-        ]
+        "score": 3,
+        "sog": 37,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/TOR_light.svg"
       },
       "homeTeam": {
         "id": 16,
@@ -437,101 +540,165 @@
           "es": "Black\thawks"
         },
         "abbrev": "CHI",
-        "record": "5-12-0",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.5000"
-          },
-          {
-            "providerId": 4,
-            "value": "3.0000"
-          },
-          {
-            "providerId": 2,
-            "value": "330.0000"
-          },
-          {
-            "providerId": 9,
-            "value": "220.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "214.0000"
-          },
-          {
-            "providerId": 6,
-            "value": "4.1000"
-          }
-        ]
+        "score": 4,
+        "sog": 34,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg"
       },
       "gameCenterLink": "/gamecenter/tor-vs-chi/2023/11/24/2023020295",
+      "threeMinRecap": "/video/recap-maple-leafs-at-blackhawks-11-24-23-6341726667112",
+      "clock": {
+        "timeRemaining": "00:30",
+        "secondsRemaining": 30,
+        "running": false,
+        "inIntermission": false
+      },
       "neutralSite": false,
       "venueTimezone": "America/Chicago",
-      "ticketsLink": "https://www.ticketmaster.com/event/04005EDC97F41433?brand=nhl&wt.mc_id=NHL_LEAGUE_CHI_SCORE_TAB_APP_GM7&utm_source=nhl.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CHI&utm_content=SCORE_TAB_APP_GM7",
-      "teamLeaders": [
+      "period": 4,
+      "periodDescriptor": {
+        "number": 4,
+        "periodType": "OT"
+      },
+      "gameOutcome": {
+        "lastPeriodType": "OT",
+        "otPeriods": 1
+      },
+      "goals": [
         {
-          "id": 8479318,
-          "name": {
-            "default": "A. Matthews"
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/TOR/8479318.png",
+          "timeInPeriod": "07:14",
+          "playerId": 8481582,
+          "name": {
+            "default": "N. Robertson"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/TOR/8481582.png",
           "teamAbbrev": "TOR",
-          "category": "goals",
-          "value": 14
+          "goalsToDate": 3,
+          "awayScore": 1,
+          "homeScore": 0,
+          "strength": "EV",
+          "highlightClip": 6341722592112
         },
         {
-          "id": 8484144,
-          "name": {
-            "default": "C. Bedard"
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CHI/8484144.png",
+          "timeInPeriod": "08:03",
+          "playerId": 8477450,
+          "name": {
+            "default": "J. Dickinson"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/CHI/8477450.png",
           "teamAbbrev": "CHI",
-          "category": "goals",
-          "value": 10
+          "goalsToDate": 4,
+          "awayScore": 1,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341722613112
         },
         {
-          "id": 8477939,
-          "name": {
-            "default": "W. Nylander"
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/TOR/8477939.png",
+          "timeInPeriod": "01:17",
+          "playerId": 8475714,
+          "name": {
+            "default": "C. Jarnkrok",
+            "cs": "C. JÃ¤rnkrok",
+            "fi": "C. JÃ¤rnkrok",
+            "sk": "C. JÃ¤rnkrok"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/TOR/8475714.png",
           "teamAbbrev": "TOR",
-          "category": "assists",
-          "value": 15
+          "goalsToDate": 5,
+          "awayScore": 2,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341725285112
         },
         {
-          "id": 8477495,
-          "name": {
-            "default": "S. Jones"
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CHI/8477495.png",
-          "teamAbbrev": "CHI",
-          "category": "assists",
-          "value": 7
-        },
-        {
-          "id": 8479361,
+          "timeInPeriod": "03:31",
+          "playerId": 8471817,
           "name": {
-            "default": "J. Woll"
+            "default": "R. Reaves"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/TOR/8479361.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/TOR/8471817.png",
           "teamAbbrev": "TOR",
-          "category": "wins",
-          "value": 6
+          "goalsToDate": 1,
+          "awayScore": 3,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341725474112
         },
         {
-          "id": 8475852,
-          "name": {
-            "default": "P. Mrazek",
-            "cs": "P. MrÃ¡zek",
-            "sk": "P. MrÃ¡zek"
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CHI/8475852.png",
+          "timeInPeriod": "12:27",
+          "playerId": 8477450,
+          "name": {
+            "default": "J. Dickinson"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/CHI/8477450.png",
           "teamAbbrev": "CHI",
-          "category": "wins",
-          "value": 4
+          "goalsToDate": 5,
+          "awayScore": 3,
+          "homeScore": 2,
+          "strength": "EV",
+          "highlightClip": 6341725883112
+        },
+        {
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "00:15",
+          "playerId": 8477450,
+          "name": {
+            "default": "J. Dickinson"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/CHI/8477450.png",
+          "teamAbbrev": "CHI",
+          "goalsToDate": 6,
+          "awayScore": 3,
+          "homeScore": 3,
+          "strength": "EV",
+          "highlightClip": 6341727221112
+        },
+        {
+          "period": 4,
+          "periodDescriptor": {
+            "number": 4,
+            "periodType": "OT"
+          },
+          "timeInPeriod": "04:30",
+          "playerId": 8483466,
+          "name": {
+            "default": "K. Korchinski"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/CHI/8483466.png",
+          "teamAbbrev": "CHI",
+          "goalsToDate": 2,
+          "awayScore": 3,
+          "homeScore": 4,
+          "strength": "EV",
+          "highlightClip": 6341728610112
         }
       ]
     },
@@ -560,7 +727,7 @@
           "network": "MSGSN"
         }
       ],
-      "gameState": "FUT",
+      "gameState": "OFF",
       "gameScheduleState": "OK",
       "awayTeam": {
         "id": 29,
@@ -568,34 +735,9 @@
           "default": "Blue Jackets"
         },
         "abbrev": "CBJ",
-        "record": "5-11-4",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.5500"
-          },
-          {
-            "providerId": 4,
-            "value": "2.9000"
-          },
-          {
-            "providerId": 2,
-            "value": "330.0000"
-          },
-          {
-            "providerId": 6,
-            "value": "3.9500"
-          },
-          {
-            "providerId": 9,
-            "value": "205.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "203.0000"
-          }
-        ]
+        "score": 2,
+        "sog": 28,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg"
       },
       "homeTeam": {
         "id": 1,
@@ -603,101 +745,85 @@
           "default": "Devils"
         },
         "abbrev": "NJD",
-        "record": "8-8-1",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/NJD_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.5500"
-          },
-          {
-            "providerId": 4,
-            "value": "1.4000"
-          },
-          {
-            "providerId": 2,
-            "value": "-148.0000"
-          },
-          {
-            "providerId": 6,
-            "value": "1.6500"
-          },
-          {
-            "providerId": 9,
-            "value": "-250.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "-252.0000"
-          }
-        ]
+        "score": 1,
+        "sog": 38,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/NJD_light.svg"
       },
       "gameCenterLink": "/gamecenter/cbj-vs-njd/2023/11/24/2023020296",
+      "threeMinRecap": "/video/recap-blue-jackets-at-devils-11-24-23-6341729949112",
+      "clock": {
+        "timeRemaining": "00:00",
+        "secondsRemaining": 0,
+        "running": false,
+        "inIntermission": false
+      },
       "neutralSite": false,
       "venueTimezone": "US/Eastern",
-      "ticketsLink": "https://www.ticketmaster.com/event/02005EDBD653919D?brand=nhl&wt.mc_id=NHL_LEAGUE_NJD_SCORE_TAB_APP_GM9&utm_source=nhl.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NJD&utm_content=SCORE_TAB_APP_GM9",
-      "teamLeaders": [
+      "period": 3,
+      "periodDescriptor": {
+        "number": 3,
+        "periodType": "REG"
+      },
+      "gameOutcome": {
+        "lastPeriodType": "REG"
+      },
+      "goals": [
         {
-          "id": 8476432,
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "10:04",
+          "playerId": 8476432,
           "name": {
             "default": "B. Jenner"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CBJ/8476432.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/CBJ/8476432.png",
           "teamAbbrev": "CBJ",
-          "category": "goals",
-          "value": 10
+          "goalsToDate": 11,
+          "awayScore": 1,
+          "homeScore": 0,
+          "strength": "EV",
+          "highlightClip": 6341726076112
         },
         {
-          "id": 8475726,
-          "name": {
-            "default": "T. Toffoli"
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NJD/8475726.png",
+          "timeInPeriod": "13:15",
+          "playerId": 8482125,
+          "name": {
+            "default": "A. Holtz"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/NJD/8482125.png",
           "teamAbbrev": "NJD",
-          "category": "goals",
-          "value": 9
+          "goalsToDate": 5,
+          "awayScore": 1,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341726278112
         },
         {
-          "id": 8481559,
-          "name": {
-            "default": "J. Hughes"
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NJD/8481559.png",
-          "teamAbbrev": "NJD",
-          "category": "assists",
-          "value": 16
-        },
-        {
-          "id": 8478460,
+          "timeInPeriod": "19:23",
+          "playerId": 8480762,
           "name": {
-            "default": "Z. Werenski"
+            "default": "E. Robinson"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CBJ/8478460.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/CBJ/8480762.png",
           "teamAbbrev": "CBJ",
-          "category": "assists",
-          "value": 14
-        },
-        {
-          "id": 8477970,
-          "name": {
-            "default": "V. Vanecek",
-            "cs": "V. VanÄ›Äek",
-            "sk": "V. VanÄ›Äek"
-          },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NJD/8477970.png",
-          "teamAbbrev": "NJD",
-          "category": "wins",
-          "value": 7
-        },
-        {
-          "id": 8478007,
-          "name": {
-            "default": "E. Merzlikins"
-          },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CBJ/8478007.png",
-          "teamAbbrev": "CBJ",
-          "category": "wins",
-          "value": 4
+          "goalsToDate": 1,
+          "awayScore": 2,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341726591112
         }
       ]
     },
@@ -726,7 +852,7 @@
           "network": "BSSO"
         }
       ],
-      "gameState": "FUT",
+      "gameState": "OFF",
       "gameScheduleState": "OK",
       "awayTeam": {
         "id": 18,
@@ -734,30 +860,9 @@
           "default": "Predators"
         },
         "abbrev": "NSH",
-        "record": "8-10-0",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/NSH_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.1800"
-          },
-          {
-            "providerId": 4,
-            "value": "1.9500"
-          },
-          {
-            "providerId": 6,
-            "value": "2.3600"
-          },
-          {
-            "providerId": 9,
-            "value": "-110.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "-109.0000"
-          }
-        ]
+        "score": 8,
+        "sog": 35,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/NSH_light.svg"
       },
       "homeTeam": {
         "id": 19,
@@ -765,95 +870,240 @@
           "default": "Blues"
         },
         "abbrev": "STL",
-        "record": "10-7-1",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/STL_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.1800"
-          },
-          {
-            "providerId": 4,
-            "value": "1.8500"
-          },
-          {
-            "providerId": 6,
-            "value": "2.5000"
-          },
-          {
-            "providerId": 9,
-            "value": "-110.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "-112.0000"
-          }
-        ]
+        "score": 3,
+        "sog": 39,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/STL_light.svg"
       },
       "gameCenterLink": "/gamecenter/nsh-vs-stl/2023/11/24/2023020297",
+      "threeMinRecap": "/video/recap-predators-at-blues-11-24-23-6341728759112",
+      "clock": {
+        "timeRemaining": "00:00",
+        "secondsRemaining": 0,
+        "running": false,
+        "inIntermission": false
+      },
       "neutralSite": false,
       "venueTimezone": "US/Central",
-      "ticketsLink": "https://www.ticketmaster.com/event/06005EDABFA33C8E?brand=nhl&wt.mc_id=NHL_LEAGUE_STL_SCORE_TAB_APP_GM9&utm_source=nhl.com&utm_medium=client&utm_campaign=NHL_LEAGUE_STL&utm_content=SCORE_TAB_APP_GM9",
-      "teamLeaders": [
+      "period": 3,
+      "periodDescriptor": {
+        "number": 3,
+        "periodType": "REG"
+      },
+      "gameOutcome": {
+        "lastPeriodType": "REG"
+      },
+      "goals": [
         {
-          "id": 8476887,
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "06:57",
+          "playerId": 8476887,
           "name": {
             "default": "F. Forsberg"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NSH/8476887.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/NSH/8476887.png",
           "teamAbbrev": "NSH",
-          "category": "goals",
-          "value": 9
+          "goalsToDate": 10,
+          "awayScore": 1,
+          "homeScore": 0,
+          "strength": "EV",
+          "highlightClip": 6341725771112
         },
         {
-          "id": 8480023,
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "07:25",
+          "playerId": 8478508,
+          "name": {
+            "default": "Y. Trenin"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/NSH/8478508.png",
+          "teamAbbrev": "NSH",
+          "goalsToDate": 3,
+          "awayScore": 2,
+          "homeScore": 0,
+          "strength": "EV",
+          "highlightClip": 6341726073112
+        },
+        {
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "13:53",
+          "playerId": 8482146,
+          "name": {
+            "default": "L. Evangelista"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/NSH/8482146.png",
+          "teamAbbrev": "NSH",
+          "goalsToDate": 2,
+          "awayScore": 3,
+          "homeScore": 0,
+          "strength": "EV",
+          "highlightClip": 6341725799112
+        },
+        {
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "16:32",
+          "playerId": 8477402,
+          "name": {
+            "default": "P. Buchnevich",
+            "cs": "P. BuÄnÄ›viÄ",
+            "fi": "P. Butshnevitsh",
+            "sk": "P. BuÄnÄ›viÄ"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/STL/8477402.png",
+          "teamAbbrev": "STL",
+          "goalsToDate": 7,
+          "awayScore": 3,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341726390112
+        },
+        {
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "02:45",
+          "playerId": 8481056,
+          "name": {
+            "default": "S. Stastney"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/NSH/8481056.png",
+          "teamAbbrev": "NSH",
+          "goalsToDate": 1,
+          "awayScore": 4,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341726430112
+        },
+        {
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "04:46",
+          "playerId": 8475158,
+          "name": {
+            "default": "R. O'Reilly"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/NSH/8475158.png",
+          "teamAbbrev": "NSH",
+          "goalsToDate": 10,
+          "awayScore": 5,
+          "homeScore": 1,
+          "strength": "PP",
+          "highlightClip": 6341727611112
+        },
+        {
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "06:00",
+          "playerId": 8482146,
+          "name": {
+            "default": "L. Evangelista"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/NSH/8482146.png",
+          "teamAbbrev": "NSH",
+          "goalsToDate": 3,
+          "awayScore": 6,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341726928112
+        },
+        {
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "10:17",
+          "playerId": 8480023,
           "name": {
             "default": "R. Thomas"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/STL/8480023.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/STL/8480023.png",
           "teamAbbrev": "STL",
-          "category": "goals",
-          "value": 7
+          "goalsToDate": 8,
+          "awayScore": 6,
+          "homeScore": 2,
+          "strength": "EV",
+          "highlightClip": 6341727054112
         },
         {
-          "id": 8476887,
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "17:29",
+          "playerId": 8476887,
           "name": {
             "default": "F. Forsberg"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NSH/8476887.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/NSH/8476887.png",
           "teamAbbrev": "NSH",
-          "category": "assists",
-          "value": 12
+          "goalsToDate": 11,
+          "awayScore": 7,
+          "homeScore": 2,
+          "strength": "EV",
+          "highlightClip": 6341727250112
         },
         {
-          "id": 8480023,
-          "name": {
-            "default": "R. Thomas"
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/STL/8480023.png",
+          "timeInPeriod": "05:23",
+          "playerId": 8482089,
+          "name": {
+            "default": "J. Neighbours"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/STL/8482089.png",
           "teamAbbrev": "STL",
-          "category": "assists",
-          "value": 11
+          "goalsToDate": 5,
+          "awayScore": 7,
+          "homeScore": 3,
+          "strength": "PP",
+          "highlightClip": 6341729125112
         },
         {
-          "id": 8477424,
-          "name": {
-            "default": "J. Saros"
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NSH/8477424.png",
+          "timeInPeriod": "12:42",
+          "playerId": 8480748,
+          "name": {
+            "default": "K. Sherwood"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/NSH/8480748.png",
           "teamAbbrev": "NSH",
-          "category": "wins",
-          "value": 6
-        },
-        {
-          "id": 8476412,
-          "name": {
-            "default": "J. Binnington"
-          },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/STL/8476412.png",
-          "teamAbbrev": "STL",
-          "category": "wins",
-          "value": 5
+          "goalsToDate": 5,
+          "awayScore": 8,
+          "homeScore": 3,
+          "strength": "EV",
+          "highlightClip": 6341729538112
         }
       ]
     },
@@ -882,7 +1132,7 @@
           "network": "MNMT"
         }
       ],
-      "gameState": "FUT",
+      "gameState": "OFF",
       "gameScheduleState": "OK",
       "awayTeam": {
         "id": 22,
@@ -890,34 +1140,9 @@
           "default": "Oilers"
         },
         "abbrev": "EDM",
-        "record": "5-12-1",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.3300"
-          },
-          {
-            "providerId": 4,
-            "value": "1.7500"
-          },
-          {
-            "providerId": 2,
-            "value": "110.0000"
-          },
-          {
-            "providerId": 6,
-            "value": "2.0000"
-          },
-          {
-            "providerId": 9,
-            "value": "-142.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "-142.0000"
-          }
-        ]
+        "score": 5,
+        "sog": 35,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg"
       },
       "homeTeam": {
         "id": 15,
@@ -925,99 +1150,123 @@
           "default": "Capitals"
         },
         "abbrev": "WSH",
-        "record": "10-4-2",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/WSH_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.3300"
-          },
-          {
-            "providerId": 4,
-            "value": "2.1000"
-          },
-          {
-            "providerId": 2,
-            "value": "190.0000"
-          },
-          {
-            "providerId": 6,
-            "value": "3.0000"
-          },
-          {
-            "providerId": 9,
-            "value": "120.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "117.0000"
-          }
-        ]
+        "score": 0,
+        "sog": 25,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/WSH_light.svg"
       },
       "gameCenterLink": "/gamecenter/edm-vs-wsh/2023/11/24/2023020298",
+      "threeMinRecap": "/video/recap-oilers-at-capitals-11-24-23-6341729653112",
+      "clock": {
+        "timeRemaining": "00:00",
+        "secondsRemaining": 0,
+        "running": false,
+        "inIntermission": false
+      },
       "neutralSite": false,
       "venueTimezone": "US/Eastern",
-      "ticketsLink": "https://www.ticketmaster.com/event/15005EDCF1B85153?brand=nhl&wt.mc_id=NHL_LEAGUE_WSH_SCORE_TAB_APP_GM12&utm_source=nhl.com&utm_medium=client&utm_campaign=NHL_LEAGUE_WSH&utm_content=SCORE_TAB_APP_GM12",
-      "teamLeaders": [
+      "period": 3,
+      "periodDescriptor": {
+        "number": 3,
+        "periodType": "REG"
+      },
+      "gameOutcome": {
+        "lastPeriodType": "REG"
+      },
+      "goals": [
         {
-          "id": 8475786,
-          "name": {
-            "default": "Z. Hyman"
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/EDM/8475786.png",
+          "timeInPeriod": "14:10",
+          "playerId": 8475169,
+          "name": {
+            "default": "E. Kane"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/EDM/8475169.png",
           "teamAbbrev": "EDM",
-          "category": "goals",
-          "value": 10
+          "goalsToDate": 9,
+          "awayScore": 1,
+          "homeScore": 0,
+          "strength": "EV",
+          "highlightClip": 6341725119112
         },
         {
-          "id": 8478440,
-          "name": {
-            "default": "D. Strome"
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/WSH/8478440.png",
-          "teamAbbrev": "WSH",
-          "category": "goals",
-          "value": 8
+          "timeInPeriod": "15:24",
+          "playerId": 8476454,
+          "name": {
+            "default": "R. Nugent-Hopkins"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/EDM/8476454.png",
+          "teamAbbrev": "EDM",
+          "goalsToDate": 4,
+          "awayScore": 2,
+          "homeScore": 0,
+          "strength": "EV",
+          "highlightClip": 6341725322112
         },
         {
-          "id": 8477934,
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "03:44",
+          "playerId": 8480803,
+          "name": {
+            "default": "E. Bouchard"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/EDM/8480803.png",
+          "teamAbbrev": "EDM",
+          "goalsToDate": 5,
+          "awayScore": 3,
+          "homeScore": 0,
+          "strength": "PP",
+          "highlightClip": 6341726135112
+        },
+        {
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "04:48",
+          "playerId": 8477934,
           "name": {
             "default": "L. Draisaitl"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/EDM/8477934.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/EDM/8477934.png",
           "teamAbbrev": "EDM",
-          "category": "assists",
-          "value": 17
+          "goalsToDate": 7,
+          "awayScore": 4,
+          "homeScore": 0,
+          "strength": "PP",
+          "highlightClip": 6341726354112
         },
         {
-          "id": 8474590,
-          "name": {
-            "default": "J. Carlson"
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/WSH/8474590.png",
-          "teamAbbrev": "WSH",
-          "category": "assists",
-          "value": 10
-        },
-        {
-          "id": 8475311,
+          "timeInPeriod": "18:37",
+          "playerId": 8477934,
           "name": {
-            "default": "D. Kuemper"
+            "default": "L. Draisaitl"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/WSH/8475311.png",
-          "teamAbbrev": "WSH",
-          "category": "wins",
-          "value": 4
-        },
-        {
-          "id": 8479973,
-          "name": {
-            "default": "S. Skinner"
-          },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/EDM/8479973.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/EDM/8477934.png",
           "teamAbbrev": "EDM",
-          "category": "wins",
-          "value": 4
+          "goalsToDate": 8,
+          "awayScore": 5,
+          "homeScore": 0,
+          "strength": "PP",
+          "highlightClip": 6341726864112
         }
       ]
     },
@@ -1076,7 +1325,7 @@
           "network": "BSSD"
         }
       ],
-      "gameState": "FUT",
+      "gameState": "OFF",
       "gameScheduleState": "OK",
       "awayTeam": {
         "id": 26,
@@ -1084,34 +1333,9 @@
           "default": "Kings"
         },
         "abbrev": "LAK",
-        "record": "11-3-3",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/LAK_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.2800"
-          },
-          {
-            "providerId": 4,
-            "value": "1.5000"
-          },
-          {
-            "providerId": 2,
-            "value": "-118.0000"
-          },
-          {
-            "providerId": 9,
-            "value": "-205.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "-200.0000"
-          },
-          {
-            "providerId": 6,
-            "value": "1.7000"
-          }
-        ]
+        "score": 5,
+        "sog": 31,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/LAK_light.svg"
       },
       "homeTeam": {
         "id": 24,
@@ -1119,101 +1343,161 @@
           "default": "Ducks"
         },
         "abbrev": "ANA",
-        "record": "9-10-0",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.2800"
-          },
-          {
-            "providerId": 4,
-            "value": "2.5500"
-          },
-          {
-            "providerId": 2,
-            "value": "265.0000"
-          },
-          {
-            "providerId": 9,
-            "value": "170.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "163.0000"
-          },
-          {
-            "providerId": 6,
-            "value": "3.7500"
-          }
-        ]
+        "score": 2,
+        "sog": 31,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg"
       },
       "gameCenterLink": "/gamecenter/lak-vs-ana/2023/11/24/2023020299",
+      "threeMinRecap": "/video/recap-kings-at-ducks-11-24-23-6341731227112",
+      "clock": {
+        "timeRemaining": "00:00",
+        "secondsRemaining": 0,
+        "running": false,
+        "inIntermission": false
+      },
       "neutralSite": false,
       "venueTimezone": "America/Los_Angeles",
-      "ticketsLink": "https://www.ticketmaster.com/event/09005ED790952280?brand=nhl&wt.mc_id=NHL_LEAGUE_ANA_SCORE_TAB_APP_GM12&utm_source=nhl.com&utm_medium=client&utm_campaign=NHL_LEAGUE_ANA&utm_content=SCORE_TAB_APP_GM12",
-      "teamLeaders": [
+      "period": 3,
+      "periodDescriptor": {
+        "number": 3,
+        "periodType": "REG"
+      },
+      "gameOutcome": {
+        "lastPeriodType": "REG"
+      },
+      "goals": [
         {
-          "id": 8478366,
-          "name": {
-            "default": "F. Vatrano"
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/ANA/8478366.png",
-          "teamAbbrev": "ANA",
-          "category": "goals",
-          "value": 13
-        },
-        {
-          "id": 8479675,
-          "name": {
-            "default": "T. Moore"
-          },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/LAK/8479675.png",
-          "teamAbbrev": "LAK",
-          "category": "goals",
-          "value": 9
-        },
-        {
-          "id": 8477942,
+          "timeInPeriod": "10:25",
+          "playerId": 8477942,
           "name": {
             "default": "K. Fiala"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/LAK/8477942.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/LAK/8477942.png",
           "teamAbbrev": "LAK",
-          "category": "assists",
-          "value": 13
+          "goalsToDate": 5,
+          "awayScore": 1,
+          "homeScore": 0,
+          "strength": "PP",
+          "highlightClip": 6341727784112
         },
         {
-          "id": 8476458,
-          "name": {
-            "default": "R. Strome"
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/ANA/8476458.png",
-          "teamAbbrev": "ANA",
-          "category": "assists",
-          "value": 12
-        },
-        {
-          "id": 8475660,
+          "timeInPeriod": "12:26",
+          "playerId": 8481560,
           "name": {
-            "default": "C. Talbot"
+            "default": "A. Kaliyev"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/LAK/8475660.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/LAK/8481560.png",
           "teamAbbrev": "LAK",
-          "category": "wins",
-          "value": 9
+          "goalsToDate": 4,
+          "awayScore": 2,
+          "homeScore": 0,
+          "strength": "PP",
+          "highlightClip": 6341726721112
         },
         {
-          "id": 8480843,
-          "name": {
-            "default": "L. Dostal",
-            "cs": "L. DostÃ¡l",
-            "sk": "L. DostÃ¡l"
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/ANA/8480843.png",
+          "timeInPeriod": "01:17",
+          "playerId": 8482124,
+          "name": {
+            "default": "Q. Byfield"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/LAK/8482124.png",
+          "teamAbbrev": "LAK",
+          "goalsToDate": 4,
+          "awayScore": 3,
+          "homeScore": 0,
+          "strength": "EV",
+          "highlightClip": 6341727726112
+        },
+        {
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "02:56",
+          "playerId": 8477942,
+          "name": {
+            "default": "K. Fiala"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/LAK/8477942.png",
+          "teamAbbrev": "LAK",
+          "goalsToDate": 6,
+          "awayScore": 4,
+          "homeScore": 0,
+          "strength": "EV",
+          "highlightClip": 6341728601112
+        },
+        {
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "12:42",
+          "playerId": 8475462,
+          "name": {
+            "default": "R. Gudas"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/ANA/8475462.png",
           "teamAbbrev": "ANA",
-          "category": "wins",
-          "value": 5
+          "goalsToDate": 4,
+          "awayScore": 4,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341729728112
+        },
+        {
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "03:21",
+          "playerId": 8471685,
+          "name": {
+            "default": "A. Kopitar"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/LAK/8471685.png",
+          "teamAbbrev": "LAK",
+          "goalsToDate": 10,
+          "awayScore": 5,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341729658112
+        },
+        {
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "11:24",
+          "playerId": 8473986,
+          "name": {
+            "default": "A. Killorn"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/ANA/8473986.png",
+          "teamAbbrev": "ANA",
+          "goalsToDate": 1,
+          "awayScore": 5,
+          "homeScore": 2,
+          "strength": "PP",
+          "highlightClip": 6341729076112
         }
       ]
     },
@@ -1248,7 +1532,7 @@
           "network": "NBCSCA"
         }
       ],
-      "gameState": "FUT",
+      "gameState": "OFF",
       "gameScheduleState": "OK",
       "awayTeam": {
         "id": 8,
@@ -1256,34 +1540,9 @@
           "default": "Canadiens"
         },
         "abbrev": "MTL",
-        "record": "8-9-2",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.3100"
-          },
-          {
-            "providerId": 4,
-            "value": "1.7000"
-          },
-          {
-            "providerId": 2,
-            "value": "108.0000"
-          },
-          {
-            "providerId": 9,
-            "value": "-148.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "-147.0000"
-          },
-          {
-            "providerId": 6,
-            "value": "1.9800"
-          }
-        ]
+        "score": 3,
+        "sog": 24,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg"
       },
       "homeTeam": {
         "id": 28,
@@ -1291,99 +1550,127 @@
           "default": "Sharks"
         },
         "abbrev": "SJS",
-        "record": "3-15-1",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/SJS_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.3100"
-          },
-          {
-            "providerId": 4,
-            "value": "2.1500"
-          },
-          {
-            "providerId": 2,
-            "value": "195.0000"
-          },
-          {
-            "providerId": 9,
-            "value": "124.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "122.0000"
-          },
-          {
-            "providerId": 6,
-            "value": "3.0000"
-          }
-        ]
+        "score": 2,
+        "sog": 33,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/SJS_light.svg"
       },
       "gameCenterLink": "/gamecenter/mtl-vs-sjs/2023/11/24/2023020300",
+      "threeMinRecap": "/video/recap-canadiens-at-sharks-11-24-23-6341730941112",
+      "threeMinRecapFr": "/fr/video/recap-canadiens-at-sharks-11-24-23-6341730467112",
+      "clock": {
+        "timeRemaining": "00:00",
+        "secondsRemaining": 0,
+        "running": false,
+        "inIntermission": false
+      },
       "neutralSite": false,
       "venueTimezone": "US/Pacific",
-      "ticketsLink": "https://www.ticketmaster.com/event/1C005ED5EA49713D?brand=nhl&wt.mc_id=NHL_LEAGUE_SJS_SCORE_TAB_APP_GM11&utm_source=nhl.com&utm_medium=client&utm_campaign=NHL_LEAGUE_SJS&utm_content=SCORE_TAB_APP_GM11",
-      "teamLeaders": [
+      "period": 5,
+      "periodDescriptor": {
+        "number": 5,
+        "periodType": "SO"
+      },
+      "gameOutcome": {
+        "lastPeriodType": "SO"
+      },
+      "goals": [
         {
-          "id": 8480018,
-          "name": {
-            "default": "N. Suzuki"
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/MTL/8480018.png",
-          "teamAbbrev": "MTL",
-          "category": "goals",
-          "value": 6
-        },
-        {
-          "id": 8476881,
+          "timeInPeriod": "05:06",
+          "playerId": 8474884,
           "name": {
-            "default": "T. Hertl"
+            "default": "M. Hoffman"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/SJS/8476881.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/SJS/8474884.png",
           "teamAbbrev": "SJS",
-          "category": "goals",
-          "value": 4
+          "goalsToDate": 5,
+          "awayScore": 0,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341729408112,
+          "highlightClipFr": 6341728824112
         },
         {
-          "id": 8480018,
-          "name": {
-            "default": "N. Suzuki"
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/MTL/8480018.png",
-          "teamAbbrev": "MTL",
-          "category": "assists",
-          "value": 11
-        },
-        {
-          "id": 8476881,
+          "timeInPeriod": "12:30",
+          "playerId": 8482667,
           "name": {
-            "default": "T. Hertl"
+            "default": "W. Eklund"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/SJS/8476881.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/SJS/8482667.png",
           "teamAbbrev": "SJS",
-          "category": "assists",
-          "value": 8
+          "goalsToDate": 4,
+          "awayScore": 0,
+          "homeScore": 2,
+          "strength": "PP",
+          "highlightClip": 6341729519112,
+          "highlightClipFr": 6341728740112
         },
         {
-          "id": 8478470,
-          "name": {
-            "default": "S. Montembeault"
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/MTL/8478470.png",
+          "timeInPeriod": "18:02",
+          "playerId": 8480192,
+          "name": {
+            "default": "J. Kovacevic"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/MTL/8480192.png",
           "teamAbbrev": "MTL",
-          "category": "wins",
-          "value": 4
+          "goalsToDate": 3,
+          "awayScore": 1,
+          "homeScore": 2,
+          "strength": "EV",
+          "highlightClip": 6341728267112,
+          "highlightClipFr": 6341728747112
         },
         {
-          "id": 8478406,
-          "name": {
-            "default": "M. Blackwood"
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/SJS/8478406.png",
-          "teamAbbrev": "SJS",
-          "category": "wins",
-          "value": 2
+          "timeInPeriod": "03:26",
+          "playerId": 8481540,
+          "name": {
+            "default": "C. Caufield"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/MTL/8481540.png",
+          "teamAbbrev": "MTL",
+          "goalsToDate": 6,
+          "awayScore": 2,
+          "homeScore": 2,
+          "strength": "EV",
+          "highlightClip": 6341730525112,
+          "highlightClipFr": 6341730055112
+        },
+        {
+          "period": 5,
+          "periodDescriptor": {
+            "number": 5,
+            "periodType": "SO"
+          },
+          "timeInPeriod": "00:00",
+          "playerId": 8481058,
+          "name": {
+            "default": "J. YlÃ¶nen"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/MTL/8481058.png",
+          "teamAbbrev": "MTL",
+          "goalsToDate": 3,
+          "awayScore": 3,
+          "homeScore": 2,
+          "strength": "EV"
         }
       ]
     },
@@ -1436,7 +1723,7 @@
           "network": "MAX"
         }
       ],
-      "gameState": "FUT",
+      "gameState": "OFF",
       "gameScheduleState": "OK",
       "awayTeam": {
         "id": 5,
@@ -1444,34 +1731,9 @@
           "default": "Penguins"
         },
         "abbrev": "PIT",
-        "record": "9-9-0",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.2300"
-          },
-          {
-            "providerId": 4,
-            "value": "1.8000"
-          },
-          {
-            "providerId": 2,
-            "value": "133.0000"
-          },
-          {
-            "providerId": 9,
-            "value": "-125.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "-123.0000"
-          },
-          {
-            "providerId": 6,
-            "value": "2.2000"
-          }
-        ]
+        "score": 2,
+        "sog": 33,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg"
       },
       "homeTeam": {
         "id": 7,
@@ -1479,99 +1741,129 @@
           "default": "Sabres"
         },
         "abbrev": "BUF",
-        "record": "8-9-2",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/BUF_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.2300"
-          },
-          {
-            "providerId": 4,
-            "value": "2.0000"
-          },
-          {
-            "providerId": 2,
-            "value": "155.0000"
-          },
-          {
-            "providerId": 9,
-            "value": "105.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "101.0000"
-          },
-          {
-            "providerId": 6,
-            "value": "2.6600"
-          }
-        ]
+        "score": 3,
+        "sog": 34,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/BUF_light.svg"
       },
       "gameCenterLink": "/gamecenter/pit-vs-buf/2023/11/24/2023020301",
+      "threeMinRecap": "/video/recap-penguins-at-sabres-11-24-23-6341734760112",
+      "threeMinRecapFr": "/fr/video/recap-penguins-at-sabres-11-24-23-6341732328112",
+      "clock": {
+        "timeRemaining": "00:00",
+        "secondsRemaining": 0,
+        "running": false,
+        "inIntermission": false
+      },
       "neutralSite": false,
       "venueTimezone": "America/New_York",
-      "ticketsLink": "https://www.ticketmaster.com/event/00005EDACB03596F?brand=nhl&wt.mc_id=NHL_LEAGUE_BUF_SCORE_TAB_APP_GM10&utm_source=nhl.com&utm_medium=client&utm_campaign=NHL_LEAGUE_BUF&utm_content=SCORE_TAB_APP_GM10",
-      "teamLeaders": [
+      "period": 3,
+      "periodDescriptor": {
+        "number": 3,
+        "periodType": "REG"
+      },
+      "gameOutcome": {
+        "lastPeriodType": "REG"
+      },
+      "goals": [
         {
-          "id": 8471675,
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "16:46",
+          "playerId": 8471675,
           "name": {
             "default": "S. Crosby"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/PIT/8471675.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/PIT/8471675.png",
           "teamAbbrev": "PIT",
-          "category": "goals",
-          "value": 12
+          "goalsToDate": 13,
+          "awayScore": 1,
+          "homeScore": 0,
+          "strength": "EV",
+          "highlightClip": 6341731255112,
+          "highlightClipFr": 6341731144112
         },
         {
-          "id": 8475784,
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "16:44",
+          "playerId": 8474189,
+          "name": {
+            "default": "L. Eller"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/PIT/8474189.png",
+          "teamAbbrev": "PIT",
+          "goalsToDate": 3,
+          "awayScore": 2,
+          "homeScore": 0,
+          "strength": "EV",
+          "highlightClip": 6341731575112,
+          "highlightClipFr": 6341732170112
+        },
+        {
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "05:13",
+          "playerId": 8475784,
           "name": {
             "default": "J. Skinner"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/BUF/8475784.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/BUF/8475784.png",
           "teamAbbrev": "BUF",
-          "category": "goals",
-          "value": 8
+          "goalsToDate": 9,
+          "awayScore": 2,
+          "homeScore": 1,
+          "strength": "PP",
+          "highlightClip": 6341732487112,
+          "highlightClipFr": 6341732488112
         },
         {
-          "id": 8477404,
-          "name": {
-            "default": "J. Guentzel"
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/PIT/8477404.png",
-          "teamAbbrev": "PIT",
-          "category": "assists",
-          "value": 15
-        },
-        {
-          "id": 8480839,
+          "timeInPeriod": "10:52",
+          "playerId": 8473449,
           "name": {
-            "default": "R. Dahlin"
+            "default": "K. Okposo"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/BUF/8480839.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/BUF/8473449.png",
           "teamAbbrev": "BUF",
-          "category": "assists",
-          "value": 12
+          "goalsToDate": 1,
+          "awayScore": 2,
+          "homeScore": 2,
+          "strength": "EV",
+          "highlightClip": 6341733468112,
+          "highlightClipFr": 6341731908112
         },
         {
-          "id": 8477465,
-          "name": {
-            "default": "T. Jarry"
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/PIT/8477465.png",
-          "teamAbbrev": "PIT",
-          "category": "wins",
-          "value": 6
-        },
-        {
-          "id": 8480045,
+          "timeInPeriod": "17:16",
+          "playerId": 8477949,
           "name": {
-            "default": "U. Luukkonen"
+            "default": "A. Tuch"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/BUF/8480045.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/BUF/8477949.png",
           "teamAbbrev": "BUF",
-          "category": "wins",
-          "value": 4
+          "goalsToDate": 6,
+          "awayScore": 2,
+          "homeScore": 3,
+          "strength": "EV",
+          "highlightClip": 6341733087112,
+          "highlightClipFr": 6341734451112
         }
       ]
     },
@@ -1606,7 +1898,7 @@
           "network": "MSGSN"
         }
       ],
-      "gameState": "FUT",
+      "gameState": "OFF",
       "gameScheduleState": "OK",
       "awayTeam": {
         "id": 2,
@@ -1614,30 +1906,9 @@
           "default": "Islanders"
         },
         "abbrev": "NYI",
-        "record": "7-6-5",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/NYI_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.0500"
-          },
-          {
-            "providerId": 4,
-            "value": "2.1000"
-          },
-          {
-            "providerId": 2,
-            "value": "180.0000"
-          },
-          {
-            "providerId": 9,
-            "value": "110.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "110.0000"
-          }
-        ]
+        "score": 5,
+        "sog": 26,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/NYI_light.svg"
       },
       "homeTeam": {
         "id": 9,
@@ -1646,95 +1917,191 @@
           "fr": "SÃ©nateurs"
         },
         "abbrev": "OTT",
-        "record": "8-7-0",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.0500"
-          },
-          {
-            "providerId": 4,
-            "value": "1.7500"
-          },
-          {
-            "providerId": 2,
-            "value": "123.0000"
-          },
-          {
-            "providerId": 9,
-            "value": "-130.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "-133.0000"
-          }
-        ]
+        "score": 3,
+        "sog": 31,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg"
       },
       "gameCenterLink": "/gamecenter/nyi-vs-ott/2023/11/24/2023020302",
+      "threeMinRecap": "/video/recap-islanders-at-senators-11-24-23-6341736702112",
+      "threeMinRecapFr": "/fr/video/recap-islanders-at-senators-11-24-23-6341735747112",
+      "clock": {
+        "timeRemaining": "00:00",
+        "secondsRemaining": 0,
+        "running": false,
+        "inIntermission": false
+      },
       "neutralSite": false,
       "venueTimezone": "US/Eastern",
-      "ticketsLink": "https://www.nhl.com/senators/tickets/",
-      "teamLeaders": [
+      "period": 3,
+      "periodDescriptor": {
+        "number": 3,
+        "periodType": "REG"
+      },
+      "gameOutcome": {
+        "lastPeriodType": "REG"
+      },
+      "goals": [
         {
-          "id": 8475754,
-          "name": {
-            "default": "B. Nelson"
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NYI/8475754.png",
+          "timeInPeriod": "10:25",
+          "playerId": 8480208,
+          "name": {
+            "default": "D. Batherson"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/OTT/8480208.png",
+          "teamAbbrev": "OTT",
+          "goalsToDate": 5,
+          "awayScore": 0,
+          "homeScore": 1,
+          "strength": "PP",
+          "highlightClip": 6341731401112,
+          "highlightClipFr": 6341731882112
+        },
+        {
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "13:55",
+          "playerId": 8475151,
+          "name": {
+            "default": "K. Palmieri"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/NYI/8475151.png",
           "teamAbbrev": "NYI",
-          "category": "goals",
-          "value": 10
+          "goalsToDate": 5,
+          "awayScore": 1,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341733346112,
+          "highlightClipFr": 6341733060112
         },
         {
-          "id": 8480801,
-          "name": {
-            "default": "B. Tkachuk"
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/OTT/8480801.png",
-          "teamAbbrev": "OTT",
-          "category": "goals",
-          "value": 10
-        },
-        {
-          "id": 8482116,
+          "timeInPeriod": "06:22",
+          "playerId": 8480789,
           "name": {
-            "default": "T. StÃ¼tzle"
+            "default": "O. Wahlstrom"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/OTT/8482116.png",
-          "teamAbbrev": "OTT",
-          "category": "assists",
-          "value": 16
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/NYI/8480789.png",
+          "teamAbbrev": "NYI",
+          "goalsToDate": 2,
+          "awayScore": 2,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341734574112,
+          "highlightClipFr": 6341734478112
         },
         {
-          "id": 8478445,
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "09:51",
+          "playerId": 8478445,
           "name": {
             "default": "M. Barzal"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NYI/8478445.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/NYI/8478445.png",
           "teamAbbrev": "NYI",
-          "category": "assists",
-          "value": 11
+          "goalsToDate": 5,
+          "awayScore": 3,
+          "homeScore": 1,
+          "strength": "PP",
+          "highlightClip": 6341732824112,
+          "highlightClipFr": 6341733886112
         },
         {
-          "id": 8476914,
-          "name": {
-            "default": "J. Korpisalo"
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/OTT/8476914.png",
+          "timeInPeriod": "09:57",
+          "playerId": 8475314,
+          "name": {
+            "default": "A. Lee"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/NYI/8475314.png",
+          "teamAbbrev": "NYI",
+          "goalsToDate": 4,
+          "awayScore": 4,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341733212112,
+          "highlightClipFr": 6341733303112
+        },
+        {
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "10:56",
+          "playerId": 8482116,
+          "name": {
+            "default": "T. StÃ¼tzle"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/OTT/8482116.png",
           "teamAbbrev": "OTT",
-          "category": "wins",
-          "value": 5
+          "goalsToDate": 5,
+          "awayScore": 4,
+          "homeScore": 2,
+          "strength": "EV",
+          "highlightClip": 6341732626112,
+          "highlightClipFr": 6341733792112
         },
         {
-          "id": 8478009,
-          "name": {
-            "default": "I. Sorokin"
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NYI/8478009.png",
+          "timeInPeriod": "11:43",
+          "playerId": 8480208,
+          "name": {
+            "default": "D. Batherson"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/OTT/8480208.png",
+          "teamAbbrev": "OTT",
+          "goalsToDate": 6,
+          "awayScore": 4,
+          "homeScore": 3,
+          "strength": "EV",
+          "highlightClip": 6341734878112,
+          "highlightClipFr": 6341734193112
+        },
+        {
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "05:18",
+          "playerId": 8481601,
+          "name": {
+            "default": "S. Holmstrom",
+            "cs": "S. HolmstrÃ¶m",
+            "sk": "S. HolmstrÃ¶m"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/NYI/8481601.png",
           "teamAbbrev": "NYI",
-          "category": "wins",
-          "value": 5
+          "goalsToDate": 5,
+          "awayScore": 5,
+          "homeScore": 3,
+          "strength": "EV",
+          "highlightClip": 6341734440112,
+          "highlightClipFr": 6341734823112
         }
       ]
     },
@@ -1763,7 +2130,7 @@
           "network": "BSSO"
         }
       ],
-      "gameState": "FUT",
+      "gameState": "OFF",
       "gameScheduleState": "OK",
       "awayTeam": {
         "id": 14,
@@ -1771,30 +2138,9 @@
           "default": "Lightning"
         },
         "abbrev": "TBL",
-        "record": "9-6-5",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.2700"
-          },
-          {
-            "providerId": 4,
-            "value": "2.3000"
-          },
-          {
-            "providerId": 2,
-            "value": "230.0000"
-          },
-          {
-            "providerId": 9,
-            "value": "130.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "135.0000"
-          }
-        ]
+        "score": 8,
+        "sog": 14,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg"
       },
       "homeTeam": {
         "id": 12,
@@ -1803,101 +2149,224 @@
           "es": "Hurri\tcanes"
         },
         "abbrev": "CAR",
-        "record": "11-7-0",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.2700"
-          },
-          {
-            "providerId": 4,
-            "value": "1.6000"
-          },
-          {
-            "providerId": 2,
-            "value": "-106.0000"
-          },
-          {
-            "providerId": 9,
-            "value": "-155.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "-162.0000"
-          }
-        ]
+        "score": 2,
+        "sog": 24,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg"
       },
       "gameCenterLink": "/gamecenter/tbl-vs-car/2023/11/24/2023020303",
+      "threeMinRecap": "/video/recap-lightning-at-hurricanes-11-24-23-6341737341112",
+      "clock": {
+        "timeRemaining": "00:00",
+        "secondsRemaining": 0,
+        "running": false,
+        "inIntermission": false
+      },
       "neutralSite": false,
       "venueTimezone": "US/Eastern",
-      "ticketsLink": "https://www.ticketmaster.com/event/2D005EF4A056438D?brand=nhl&wt.mc_id=NHL_LEAGUE_CAR_SCORE_TAB_APP_GM8&utm_source=nhl.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CAR&utm_content=SCORE_TAB_APP_GM8",
-      "teamLeaders": [
+      "period": 3,
+      "periodDescriptor": {
+        "number": 3,
+        "periodType": "REG"
+      },
+      "gameOutcome": {
+        "lastPeriodType": "REG"
+      },
+      "goals": [
         {
-          "id": 8476453,
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "18:12",
+          "playerId": 8476474,
+          "name": {
+            "default": "S. Noesen"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/CAR/8476474.png",
+          "teamAbbrev": "CAR",
+          "goalsToDate": 5,
+          "awayScore": 0,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341732725112
+        },
+        {
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "01:34",
+          "playerId": 8474564,
+          "name": {
+            "default": "S. Stamkos"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/TBL/8474564.png",
+          "teamAbbrev": "TBL",
+          "goalsToDate": 9,
+          "awayScore": 1,
+          "homeScore": 1,
+          "strength": "PP",
+          "highlightClip": 6341733623112
+        },
+        {
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "05:40",
+          "playerId": 8476453,
           "name": {
             "default": "N. Kucherov",
             "cs": "N. KuÄerov",
             "fi": "N. Kutsherov",
             "sk": "N. KuÄerov"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/TBL/8476453.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/TBL/8476453.png",
           "teamAbbrev": "TBL",
-          "category": "goals",
-          "value": 13
+          "goalsToDate": 14,
+          "awayScore": 2,
+          "homeScore": 1,
+          "strength": "PP",
+          "highlightClip": 6341735486112
         },
         {
-          "id": 8476882,
-          "name": {
-            "default": "T. Teravainen",
-            "cs": "T. TerÃ¤vÃ¤inen",
-            "fi": "T. TerÃ¤vÃ¤inen",
-            "sk": "T. TerÃ¤vÃ¤inen"
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CAR/8476882.png",
-          "teamAbbrev": "CAR",
-          "category": "goals",
-          "value": 10
-        },
-        {
-          "id": 8475167,
+          "timeInPeriod": "05:54",
+          "playerId": 8478010,
           "name": {
-            "default": "V. Hedman"
+            "default": "B. Point"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/TBL/8475167.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/TBL/8478010.png",
           "teamAbbrev": "TBL",
-          "category": "assists",
-          "value": 17
+          "goalsToDate": 9,
+          "awayScore": 3,
+          "homeScore": 1,
+          "strength": "PP",
+          "highlightClip": 6341734797112
         },
         {
-          "id": 8478427,
-          "name": {
-            "default": "S. Aho"
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CAR/8478427.png",
+          "timeInPeriod": "14:45",
+          "playerId": 8478047,
+          "name": {
+            "default": "M. Bunting"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/CAR/8478047.png",
           "teamAbbrev": "CAR",
-          "category": "assists",
-          "value": 11
+          "goalsToDate": 4,
+          "awayScore": 3,
+          "homeScore": 2,
+          "strength": "PP",
+          "highlightClip": 6341734236112
         },
         {
-          "id": 8477992,
-          "name": {
-            "default": "J. Johansson"
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/TBL/8477992.png",
+          "timeInPeriod": "05:33",
+          "playerId": 8479542,
+          "name": {
+            "default": "B. Hagel"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/TBL/8479542.png",
           "teamAbbrev": "TBL",
-          "category": "wins",
-          "value": 8
+          "goalsToDate": 10,
+          "awayScore": 4,
+          "homeScore": 2,
+          "strength": "EV",
+          "highlightClip": 6341735357112
         },
         {
-          "id": 8477293,
-          "name": {
-            "default": "A. Raanta"
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CAR/8477293.png",
-          "teamAbbrev": "CAR",
-          "category": "wins",
-          "value": 6
+          "timeInPeriod": "06:53",
+          "playerId": 8476822,
+          "name": {
+            "default": "L. Glendening"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/TBL/8476822.png",
+          "teamAbbrev": "TBL",
+          "goalsToDate": 3,
+          "awayScore": 5,
+          "homeScore": 2,
+          "strength": "EV",
+          "highlightClip": 6341737307112
+        },
+        {
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "10:41",
+          "playerId": 8478010,
+          "name": {
+            "default": "B. Point"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/TBL/8478010.png",
+          "teamAbbrev": "TBL",
+          "goalsToDate": 10,
+          "awayScore": 6,
+          "homeScore": 2,
+          "strength": "EV",
+          "highlightClip": 6341736242112
+        },
+        {
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "16:45",
+          "playerId": 8476453,
+          "name": {
+            "default": "N. Kucherov",
+            "cs": "N. KuÄerov",
+            "fi": "N. Kutsherov",
+            "sk": "N. KuÄerov"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/TBL/8476453.png",
+          "teamAbbrev": "TBL",
+          "goalsToDate": 15,
+          "awayScore": 7,
+          "homeScore": 2,
+          "strength": "EV",
+          "highlightClip": 6341738106112
+        },
+        {
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "18:08",
+          "playerId": 8478010,
+          "name": {
+            "default": "B. Point"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/TBL/8478010.png",
+          "teamAbbrev": "TBL",
+          "goalsToDate": 11,
+          "awayScore": 8,
+          "homeScore": 2,
+          "strength": "PP",
+          "highlightClip": 6341736644112
         }
       ]
     },
@@ -1926,7 +2395,7 @@
           "network": "BSFL"
         }
       ],
-      "gameState": "FUT",
+      "gameState": "OFF",
       "gameScheduleState": "OK",
       "awayTeam": {
         "id": 52,
@@ -1934,30 +2403,9 @@
           "default": "Jets"
         },
         "abbrev": "WPG",
-        "record": "11-5-2",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.3100"
-          },
-          {
-            "providerId": 4,
-            "value": "2.1500"
-          },
-          {
-            "providerId": 2,
-            "value": "190.0000"
-          },
-          {
-            "providerId": 9,
-            "value": "114.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "114.0000"
-          }
-        ]
+        "score": 3,
+        "sog": 31,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg"
       },
       "homeTeam": {
         "id": 13,
@@ -1965,97 +2413,85 @@
           "default": "Panthers"
         },
         "abbrev": "FLA",
-        "record": "12-6-1",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.3100"
-          },
-          {
-            "providerId": 4,
-            "value": "1.7000"
-          },
-          {
-            "providerId": 2,
-            "value": "114.0000"
-          },
-          {
-            "providerId": 9,
-            "value": "-135.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "-137.0000"
-          }
-        ]
+        "score": 0,
+        "sog": 33,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg"
       },
       "gameCenterLink": "/gamecenter/wpg-vs-fla/2023/11/24/2023020304",
+      "threeMinRecap": "/video/recap-jets-at-panthers-11-24-23-6341736740112",
+      "clock": {
+        "timeRemaining": "00:00",
+        "secondsRemaining": 0,
+        "running": false,
+        "inIntermission": false
+      },
       "neutralSite": false,
       "venueTimezone": "US/Eastern",
-      "ticketsLink": "https://seatgeek.com/jets-at-panthers-tickets/11-24-2023-sunrise-florida-fla-live-arena-2/nhl/6066704?aid=15999&pid=website&rid=11242023&utm_medium=partnership&utm_source=panthers_ticketing&utm_campaign=website",
-      "teamLeaders": [
+      "period": 3,
+      "periodDescriptor": {
+        "number": 3,
+        "periodType": "REG"
+      },
+      "gameOutcome": {
+        "lastPeriodType": "REG"
+      },
+      "goals": [
         {
-          "id": 8478398,
-          "name": {
-            "default": "K. Connor"
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/WPG/8478398.png",
+          "timeInPeriod": "17:43",
+          "playerId": 8475799,
+          "name": {
+            "default": "N. Niederreiter"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/WPG/8475799.png",
           "teamAbbrev": "WPG",
-          "category": "goals",
-          "value": 14
+          "goalsToDate": 6,
+          "awayScore": 1,
+          "homeScore": 0,
+          "strength": "EV",
+          "highlightClip": 6341732726112
         },
         {
-          "id": 8477933,
-          "name": {
-            "default": "S. Reinhart"
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/FLA/8477933.png",
-          "teamAbbrev": "FLA",
-          "category": "goals",
-          "value": 13
-        },
-        {
-          "id": 8476460,
+          "timeInPeriod": "11:15",
+          "playerId": 8477940,
           "name": {
-            "default": "M. Scheifele"
+            "default": "N. Ehlers"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/WPG/8476460.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/WPG/8477940.png",
           "teamAbbrev": "WPG",
-          "category": "assists",
-          "value": 15
+          "goalsToDate": 6,
+          "awayScore": 2,
+          "homeScore": 0,
+          "strength": "EV",
+          "highlightClip": 6341736901112
         },
         {
-          "id": 8479314,
-          "name": {
-            "default": "M. Tkachuk"
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/FLA/8479314.png",
-          "teamAbbrev": "FLA",
-          "category": "assists",
-          "value": 14
-        },
-        {
-          "id": 8475683,
+          "timeInPeriod": "16:11",
+          "playerId": 8476392,
           "name": {
-            "default": "S. Bobrovsky",
-            "cs": "S. Bobrovskij",
-            "sk": "S. Bobrovskij"
+            "default": "A. Lowry"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/FLA/8475683.png",
-          "teamAbbrev": "FLA",
-          "category": "wins",
-          "value": 9
-        },
-        {
-          "id": 8476945,
-          "name": {
-            "default": "C. Hellebuyck"
-          },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/WPG/8476945.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/WPG/8476392.png",
           "teamAbbrev": "WPG",
-          "category": "wins",
-          "value": 9
+          "goalsToDate": 4,
+          "awayScore": 3,
+          "homeScore": 0,
+          "strength": "SH",
+          "highlightClip": 6341736344112
         }
       ]
     },
@@ -2096,7 +2532,7 @@
           "network": "BSSW"
         }
       ],
-      "gameState": "FUT",
+      "gameState": "OFF",
       "gameScheduleState": "OK",
       "awayTeam": {
         "id": 20,
@@ -2104,30 +2540,9 @@
           "default": "Flames"
         },
         "abbrev": "CGY",
-        "record": "7-9-3",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/CGY_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.3100"
-          },
-          {
-            "providerId": 4,
-            "value": "2.4500"
-          },
-          {
-            "providerId": 2,
-            "value": "240.0000"
-          },
-          {
-            "providerId": 9,
-            "value": "150.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "149.0000"
-          }
-        ]
+        "score": 7,
+        "sog": 27,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/CGY_light.svg"
       },
       "homeTeam": {
         "id": 25,
@@ -2135,100 +2550,243 @@
           "default": "Stars"
         },
         "abbrev": "DAL",
-        "record": "12-4-2",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/DAL_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.3100"
-          },
-          {
-            "providerId": 4,
-            "value": "1.5500"
-          },
-          {
-            "providerId": 2,
-            "value": "-109.0000"
-          },
-          {
-            "providerId": 9,
-            "value": "-180.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "-178.0000"
-          }
-        ]
+        "score": 4,
+        "sog": 28,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/DAL_light.svg"
       },
       "gameCenterLink": "/gamecenter/cgy-vs-dal/2023/11/24/2023020305",
+      "threeMinRecap": "/video/recap-flames-at-stars-11-24-23-6341737264112",
+      "clock": {
+        "timeRemaining": "00:00",
+        "secondsRemaining": 0,
+        "running": false,
+        "inIntermission": false
+      },
       "neutralSite": false,
       "venueTimezone": "US/Central",
-      "ticketsLink": "https://www.ticketmaster.com/event/0C005EDAC3EF2FD1?brand=nhl&wt.mc_id=NHL_LEAGUE_DAL_SCORE_TAB_APP_GM10&utm_source=nhl.com&utm_medium=client&utm_campaign=NHL_LEAGUE_DAL&utm_content=SCORE_TAB_APP_GM10",
-      "teamLeaders": [
+      "period": 3,
+      "periodDescriptor": {
+        "number": 3,
+        "periodType": "REG"
+      },
+      "gameOutcome": {
+        "lastPeriodType": "REG"
+      },
+      "goals": [
         {
-          "id": 8470794,
-          "name": {
-            "default": "J. Pavelski"
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/DAL/8470794.png",
+          "timeInPeriod": "01:13",
+          "playerId": 8482740,
+          "name": {
+            "default": "W. Johnston"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/DAL/8482740.png",
           "teamAbbrev": "DAL",
-          "category": "goals",
-          "value": 8
+          "goalsToDate": 8,
+          "awayScore": 0,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341733687112
         },
         {
-          "id": 8476399,
-          "name": {
-            "default": "B. Coleman"
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CGY/8476399.png",
+          "timeInPeriod": "08:19",
+          "playerId": 8478421,
+          "name": {
+            "default": "A. Greer"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/CGY/8478421.png",
           "teamAbbrev": "CGY",
-          "category": "goals",
-          "value": 5
+          "goalsToDate": 3,
+          "awayScore": 1,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341733302112
         },
         {
-          "id": 8480027,
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "11:27",
+          "playerId": 8480027,
           "name": {
             "default": "J. Robertson",
             "sk": "",
             "sv": ""
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/DAL/8480027.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/DAL/8480027.png",
           "teamAbbrev": "DAL",
-          "category": "assists",
-          "value": 11
+          "goalsToDate": 6,
+          "awayScore": 1,
+          "homeScore": 2,
+          "strength": "EV",
+          "highlightClip": 6341733898112
         },
         {
-          "id": 8475172,
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "00:43",
+          "playerId": 8481068,
+          "name": {
+            "default": "Y. Sharangovich",
+            "cs": "J. Å arangoviÄ",
+            "sk": "J. Å arangoviÄ"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/CGY/8481068.png",
+          "teamAbbrev": "CGY",
+          "goalsToDate": 5,
+          "awayScore": 2,
+          "homeScore": 2,
+          "strength": "EV",
+          "highlightClip": 6341733835112
+        },
+        {
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "04:44",
+          "playerId": 8482740,
+          "name": {
+            "default": "W. Johnston"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/DAL/8482740.png",
+          "teamAbbrev": "DAL",
+          "goalsToDate": 9,
+          "awayScore": 2,
+          "homeScore": 3,
+          "strength": "EV",
+          "highlightClip": 6341736088112
+        },
+        {
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "08:53",
+          "playerId": 8470794,
+          "name": {
+            "default": "J. Pavelski"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/DAL/8470794.png",
+          "teamAbbrev": "DAL",
+          "goalsToDate": 9,
+          "awayScore": 2,
+          "homeScore": 4,
+          "strength": "PP",
+          "highlightClip": 6341734044112
+        },
+        {
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "13:27",
+          "playerId": 8480008,
+          "name": {
+            "default": "A. Ruzicka",
+            "cs": "A. RuÅ¾iÄka",
+            "sk": "A. RuÅ¾iÄka"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/CGY/8480008.png",
+          "teamAbbrev": "CGY",
+          "goalsToDate": 3,
+          "awayScore": 3,
+          "homeScore": 4,
+          "strength": "EV",
+          "highlightClip": 6341736195112
+        },
+        {
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "01:53",
+          "playerId": 8476399,
+          "name": {
+            "default": "B. Coleman"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/CGY/8476399.png",
+          "teamAbbrev": "CGY",
+          "goalsToDate": 6,
+          "awayScore": 4,
+          "homeScore": 4,
+          "strength": "EV",
+          "highlightClip": 6341738196112
+        },
+        {
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "02:22",
+          "playerId": 8477496,
+          "name": {
+            "default": "E. Lindholm"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/CGY/8477496.png",
+          "teamAbbrev": "CGY",
+          "goalsToDate": 5,
+          "awayScore": 5,
+          "homeScore": 4,
+          "strength": "EV",
+          "highlightClip": 6341736841112
+        },
+        {
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "07:28",
+          "playerId": 8474150,
+          "name": {
+            "default": "M. Backlund"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/CGY/8474150.png",
+          "teamAbbrev": "CGY",
+          "goalsToDate": 3,
+          "awayScore": 6,
+          "homeScore": 4,
+          "strength": "EV",
+          "highlightClip": 6341738298112
+        },
+        {
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "18:21",
+          "playerId": 8475172,
           "name": {
             "default": "N. Kadri"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CGY/8475172.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/CGY/8475172.png",
           "teamAbbrev": "CGY",
-          "category": "assists",
-          "value": 9
-        },
-        {
-          "id": 8479979,
-          "name": {
-            "default": "J. Oettinger"
-          },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/DAL/8479979.png",
-          "teamAbbrev": "DAL",
-          "category": "wins",
-          "value": 8
-        },
-        {
-          "id": 8474593,
-          "name": {
-            "default": "J. Markstrom",
-            "cs": "J. MarkstrÃ¶m",
-            "fi": "J. MarkstrÃ¶m",
-            "sk": "J. MarkstrÃ¶m"
-          },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CGY/8474593.png",
-          "teamAbbrev": "CGY",
-          "category": "wins",
-          "value": 4
+          "goalsToDate": 4,
+          "awayScore": 7,
+          "homeScore": 4,
+          "strength": "EV",
+          "highlightClip": 6341737829112
         }
       ]
     },
@@ -2263,7 +2821,7 @@
           "network": "MAX"
         }
       ],
-      "gameState": "FUT",
+      "gameState": "OFF",
       "gameScheduleState": "OK",
       "awayTeam": {
         "id": 21,
@@ -2271,30 +2829,9 @@
           "default": "Avalanche"
         },
         "abbrev": "COL",
-        "record": "12-6-0",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg",
-        "odds": [
-          {
-            "providerId": 4,
-            "value": "1.8000"
-          },
-          {
-            "providerId": 3,
-            "value": "4.1200"
-          },
-          {
-            "providerId": 2,
-            "value": "140.0000"
-          },
-          {
-            "providerId": 9,
-            "value": "-115.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "-116.0000"
-          }
-        ]
+        "score": 3,
+        "sog": 25,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg"
       },
       "homeTeam": {
         "id": 30,
@@ -2302,98 +2839,132 @@
           "default": "Wild"
         },
         "abbrev": "MIN",
-        "record": "5-8-4",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/MIN_light.svg",
-        "odds": [
-          {
-            "providerId": 4,
-            "value": "2.0000"
-          },
-          {
-            "providerId": 3,
-            "value": "4.1200"
-          },
-          {
-            "providerId": 2,
-            "value": "155.0000"
-          },
-          {
-            "providerId": 9,
-            "value": "-105.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "-105.0000"
-          }
-        ]
+        "score": 2,
+        "sog": 21,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/MIN_light.svg"
       },
       "gameCenterLink": "/gamecenter/col-vs-min/2023/11/24/2023020306",
+      "threeMinRecap": "/video/recap-avalanche-at-wild-11-24-23-6341740285112",
+      "threeMinRecapFr": "/fr/video/recap-avalanche-at-wild-11-24-23-6341738344112",
+      "clock": {
+        "timeRemaining": "00:00",
+        "secondsRemaining": 0,
+        "running": false,
+        "inIntermission": false
+      },
       "neutralSite": false,
       "venueTimezone": "US/Central",
-      "ticketsLink": "https://www.ticketmaster.com/event/06005EDB256C85F0?brand=nhl&wt.mc_id=NHL_LEAGUE_MIN_SCORE_TAB_APP_GM9&utm_source=nhl.com&utm_medium=client&utm_campaign=NHL_LEAGUE_MIN&utm_content=SCORE_TAB_APP_GM9",
-      "teamLeaders": [
+      "period": 3,
+      "periodDescriptor": {
+        "number": 3,
+        "periodType": "REG"
+      },
+      "gameOutcome": {
+        "lastPeriodType": "REG"
+      },
+      "goals": [
         {
-          "id": 8478420,
-          "name": {
-            "default": "M. Rantanen"
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/COL/8478420.png",
+          "timeInPeriod": "17:43",
+          "playerId": 8479525,
+          "name": {
+            "default": "R. Colton"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/COL/8479525.png",
           "teamAbbrev": "COL",
-          "category": "goals",
-          "value": 12
+          "goalsToDate": 7,
+          "awayScore": 1,
+          "homeScore": 0,
+          "strength": "EV",
+          "highlightClip": 6341733821112,
+          "highlightClipFr": 6341733915112
         },
         {
-          "id": 8478493,
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "08:39",
+          "playerId": 8477501,
+          "name": {
+            "default": "V. Nichushkin",
+            "cs": "V. NiÄuÅ¡kin",
+            "fi": "V. Nitshushkin",
+            "sk": "V. NiÄuÅ¡kin"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/COL/8477501.png",
+          "teamAbbrev": "COL",
+          "goalsToDate": 9,
+          "awayScore": 2,
+          "homeScore": 0,
+          "strength": "PP",
+          "highlightClip": 6341736290112,
+          "highlightClipFr": 6341736299112
+        },
+        {
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "09:13",
+          "playerId": 8478864,
+          "name": {
+            "default": "K. Kaprizov"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/MIN/8478864.png",
+          "teamAbbrev": "MIN",
+          "goalsToDate": 6,
+          "awayScore": 2,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341735038112,
+          "highlightClipFr": 6341736686112
+        },
+        {
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "14:21",
+          "playerId": 8478493,
           "name": {
             "default": "J. Eriksson Ek"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/MIN/8478493.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/MIN/8478493.png",
           "teamAbbrev": "MIN",
-          "category": "goals",
-          "value": 8
+          "goalsToDate": 9,
+          "awayScore": 2,
+          "homeScore": 2,
+          "strength": "PP",
+          "highlightClip": 6341737096112,
+          "highlightClipFr": 6341737202112
         },
         {
-          "id": 8480069,
-          "name": {
-            "default": "C. Makar"
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/COL/8480069.png",
+          "timeInPeriod": "04:56",
+          "playerId": 8477073,
+          "name": {
+            "default": "K. MacDermid"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/COL/8477073.png",
           "teamAbbrev": "COL",
-          "category": "assists",
-          "value": 24
-        },
-        {
-          "id": 8475692,
-          "name": {
-            "default": "M. Zuccarello"
-          },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/MIN/8475692.png",
-          "teamAbbrev": "MIN",
-          "category": "assists",
-          "value": 14
-        },
-        {
-          "id": 8480382,
-          "name": {
-            "default": "A. Georgiev",
-            "cs": "A. Georgijev",
-            "fi": "A. Georgijev",
-            "sk": "A. Georgijev"
-          },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/COL/8480382.png",
-          "teamAbbrev": "COL",
-          "category": "wins",
-          "value": 11
-        },
-        {
-          "id": 8470594,
-          "name": {
-            "default": "M. Fleury"
-          },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/MIN/8470594.png",
-          "teamAbbrev": "MIN",
-          "category": "wins",
-          "value": 3
+          "goalsToDate": 1,
+          "awayScore": 3,
+          "homeScore": 2,
+          "strength": "EV",
+          "highlightClip": 6341738218112,
+          "highlightClipFr": 6341738698112
         }
       ]
     },
@@ -2422,7 +2993,7 @@
           "network": "ROOT-NW"
         }
       ],
-      "gameState": "FUT",
+      "gameState": "OFF",
       "gameScheduleState": "OK",
       "awayTeam": {
         "id": 23,
@@ -2430,30 +3001,9 @@
           "default": "Canucks"
         },
         "abbrev": "VAN",
-        "record": "13-6-1",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.2100"
-          },
-          {
-            "providerId": 4,
-            "value": "1.8500"
-          },
-          {
-            "providerId": 2,
-            "value": "143.0000"
-          },
-          {
-            "providerId": 9,
-            "value": "-115.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "-115.0000"
-          }
-        ]
+        "score": 5,
+        "sog": 27,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg"
       },
       "homeTeam": {
         "id": 55,
@@ -2461,95 +3011,147 @@
           "default": "Kraken"
         },
         "abbrev": "SEA",
-        "record": "8-8-5",
-        "logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
-        "odds": [
-          {
-            "providerId": 3,
-            "value": "4.2100"
-          },
-          {
-            "providerId": 4,
-            "value": "1.9500"
-          },
-          {
-            "providerId": 2,
-            "value": "150.0000"
-          },
-          {
-            "providerId": 9,
-            "value": "-105.0000"
-          },
-          {
-            "providerId": 8,
-            "value": "-107.0000"
-          }
-        ]
+        "score": 1,
+        "sog": 24,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg"
       },
       "gameCenterLink": "/gamecenter/van-vs-sea/2023/11/24/2023020307",
+      "threeMinRecap": "/video/recap-canucks-at-kraken-11-24-23-6341754468112",
+      "clock": {
+        "timeRemaining": "00:00",
+        "secondsRemaining": 0,
+        "running": false,
+        "inIntermission": false
+      },
       "neutralSite": false,
       "venueTimezone": "US/Pacific",
-      "ticketsLink": "https://www.ticketmaster.com/event/0F005EBFC30D4A71?brand=nhl&wt.mc_id=NHL_LEAGUE_SEA_SCORE_TAB_APP_GM11&utm_source=nhl.com&utm_medium=client&utm_campaign=NHL_LEAGUE_SEA&utm_content=SCORE_TAB_APP_GM11",
-      "teamLeaders": [
+      "period": 3,
+      "periodDescriptor": {
+        "number": 3,
+        "periodType": "REG"
+      },
+      "gameOutcome": {
+        "lastPeriodType": "REG"
+      },
+      "goals": [
         {
-          "id": 8478444,
-          "name": {
-            "default": "B. Boeser"
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/VAN/8478444.png",
+          "timeInPeriod": "05:05",
+          "playerId": 8476927,
+          "name": {
+            "default": "T. Blueger",
+            "cs": "T. Blugers",
+            "sk": "T. Blugers"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/VAN/8476927.png",
           "teamAbbrev": "VAN",
-          "category": "goals",
-          "value": 13
+          "goalsToDate": 1,
+          "awayScore": 1,
+          "homeScore": 0,
+          "strength": "SH",
+          "highlightClip": 6341735358112
         },
         {
-          "id": 8477955,
-          "name": {
-            "default": "J. McCann"
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/SEA/8477955.png",
-          "teamAbbrev": "SEA",
-          "category": "goals",
-          "value": 9
-        },
-        {
-          "id": 8480800,
+          "timeInPeriod": "12:07",
+          "playerId": 8478057,
           "name": {
-            "default": "Q. Hughes"
+            "default": "D. Joshua"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/VAN/8480800.png",
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/VAN/8478057.png",
           "teamAbbrev": "VAN",
-          "category": "assists",
-          "value": 23
+          "goalsToDate": 3,
+          "awayScore": 2,
+          "homeScore": 0,
+          "strength": "EV",
+          "highlightClip": 6341737567112
         },
         {
-          "id": 8478407,
-          "name": {
-            "default": "V. Dunn"
+          "period": 2,
+          "periodDescriptor": {
+            "number": 2,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/SEA/8478407.png",
+          "timeInPeriod": "17:29",
+          "playerId": 8481789,
+          "name": {
+            "default": "T. Kartye"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/SEA/8481789.png",
           "teamAbbrev": "SEA",
-          "category": "assists",
-          "value": 15
+          "goalsToDate": 3,
+          "awayScore": 2,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341739766112
         },
         {
-          "id": 8477967,
-          "name": {
-            "default": "T. Demko"
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/VAN/8477967.png",
+          "timeInPeriod": "09:43",
+          "playerId": 8478043,
+          "name": {
+            "default": "S. Lafferty"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/VAN/8478043.png",
           "teamAbbrev": "VAN",
-          "category": "wins",
-          "value": 9
+          "goalsToDate": 5,
+          "awayScore": 3,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341746016112
         },
         {
-          "id": 8475831,
-          "name": {
-            "default": "P. Grubauer"
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
           },
-          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/SEA/8475831.png",
-          "teamAbbrev": "SEA",
-          "category": "wins",
-          "value": 5
+          "timeInPeriod": "12:38",
+          "playerId": 8481535,
+          "name": {
+            "default": "N. Hoglander"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/VAN/8481535.png",
+          "teamAbbrev": "VAN",
+          "goalsToDate": 7,
+          "awayScore": 4,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341749111112
+        },
+        {
+          "period": 3,
+          "periodDescriptor": {
+            "number": 3,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "17:30",
+          "playerId": 8481624,
+          "name": {
+            "default": "I. Mikheyev",
+            "cs": "I. Michejev",
+            "fi": "I. Mihejev",
+            "sk": "I. Michejev"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/VAN/8481624.png",
+          "teamAbbrev": "VAN",
+          "goalsToDate": 7,
+          "awayScore": 5,
+          "homeScore": 1,
+          "strength": "EV",
+          "highlightClip": 6341752878112
         }
       ]
     }
