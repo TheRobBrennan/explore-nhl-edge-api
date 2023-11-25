@@ -1,0 +1,2557 @@
+{
+  "prevDate": "2023-11-22",
+  "currentDate": "2023-11-24",
+  "nextDate": "2023-11-25",
+  "gameWeek": [
+    {
+      "date": "2023-11-21",
+      "dayAbbrev": "TUE",
+      "numberOfGames": 0
+    },
+    {
+      "date": "2023-11-22",
+      "dayAbbrev": "WED",
+      "numberOfGames": 14
+    },
+    {
+      "date": "2023-11-23",
+      "dayAbbrev": "THU",
+      "numberOfGames": 0
+    },
+    {
+      "date": "2023-11-24",
+      "dayAbbrev": "FRI",
+      "numberOfGames": 15
+    },
+    {
+      "date": "2023-11-25",
+      "dayAbbrev": "SAT",
+      "numberOfGames": 8
+    },
+    {
+      "date": "2023-11-26",
+      "dayAbbrev": "SUN",
+      "numberOfGames": 5
+    },
+    {
+      "date": "2023-11-27",
+      "dayAbbrev": "MON",
+      "numberOfGames": 6
+    }
+  ],
+  "oddsPartners": [
+    {
+      "partnerId": 2,
+      "country": "SE",
+      "name": "Unibet",
+      "imageUrl": "https://assets.nhle.com/betting_partner/unibet.svg",
+      "siteUrl": "https://www.unibet.se/betting/sports/filter/ice_hockey/nhl/all/matches",
+      "bgColor": "#14805E",
+      "textColor": "#FFFFFF",
+      "accentColor": "#3AAA35"
+    },
+    {
+      "partnerId": 3,
+      "country": "CZ",
+      "name": "Tipsport",
+      "imageUrl": "https://assets.nhle.com/betting_partner/tipsport.svg",
+      "siteUrl": "https://www.tipsport.cz/PartnerRedirectAction.do?pid=16961&sid=20360&bid=34954&tid=11268",
+      "bgColor": "#2497F2",
+      "textColor": "#FFFFFF",
+      "accentColor": "#FFFFFF"
+    },
+    {
+      "partnerId": 3,
+      "country": "SK",
+      "name": "Tipsport",
+      "imageUrl": "https://assets.nhle.com/betting_partner/tipsport.svg",
+      "siteUrl": "https://www.tipsport.sk/PartnerRedirectAction.do?pid=6823&sid=9018&bid=23079&tid=8475",
+      "bgColor": "#2497F2",
+      "textColor": "#FFFFFF",
+      "accentColor": "#FFFFFF"
+    },
+    {
+      "partnerId": 5,
+      "country": "RU",
+      "name": "Liga Stavok",
+      "imageUrl": "https://assets.nhle.com/betting_partner/ligastavok.svg",
+      "bgColor": "#007354",
+      "textColor": "#FFFFFF",
+      "accentColor": "#FFEB00"
+    },
+    {
+      "partnerId": 6,
+      "country": "FI",
+      "name": "Veikkaus",
+      "imageUrl": "https://assets.nhle.com/betting_partner/veikkaus.svg",
+      "siteUrl": "https://www.veikkaus.fi/fi/vedonlyonti/pitkaveto?t=3-2-1_NHL",
+      "bgColor": "#0025F5",
+      "textColor": "#FFFFFF",
+      "accentColor": "#FFFFFF"
+    },
+    {
+      "partnerId": 8,
+      "country": "CA",
+      "name": "Sportradar",
+      "imageUrl": "https://assets.nhle.com/betting_partner/sportsradar.svg",
+      "siteUrl": "https://sportradar.com",
+      "bgColor": "#000000",
+      "textColor": "#FFFFFF",
+      "accentColor": "#E6E6E6"
+    },
+    {
+      "partnerId": 8,
+      "country": "DE",
+      "name": "Sportradar",
+      "imageUrl": "https://assets.nhle.com/betting_partner/sportsradar.svg",
+      "siteUrl": "https://sportradar.com",
+      "bgColor": "#000000",
+      "textColor": "#FFFFFF",
+      "accentColor": "#E6E6E6"
+    },
+    {
+      "partnerId": 9,
+      "country": "US",
+      "name": "DraftKings",
+      "imageUrl": "https://assets.nhle.com/betting_partner/draftkings.svg",
+      "siteUrl": "https://dksb.sng.link/As9kz/720m?_dl=https%3A%2F%2Fsportsbook.draftkings.com%2Fgateway%3Fs%3D158542143%26wpcid%3D331060%26wpsrc%3D1320%26wpcn%3DNHLSportsbook%26wpscn%3DOddsByDK%26wpcrn%3DStatic%26wpscid%3DEvergreen%26wpcrid%3Dxx&psn=NHL&pcid=331060&pcrn=Evergreen&pscn=OddsByDK",
+      "bgColor": "#000000",
+      "textColor": "#FFFFFF",
+      "accentColor": "#FFFFFF"
+    }
+  ],
+  "games": [
+    {
+      "id": 2023020293,
+      "season": 20232024,
+      "gameType": 2,
+      "gameDate": "2023-11-24",
+      "venue": {
+        "default": "TD Garden"
+      },
+      "startTimeUTC": "2023-11-24T18:00:00Z",
+      "easternUTCOffset": "-05:00",
+      "venueUTCOffset": "-05:00",
+      "tvBroadcasts": [
+        {
+          "id": 31,
+          "market": "H",
+          "countryCode": "US",
+          "network": "NESN"
+        },
+        {
+          "id": 284,
+          "market": "N",
+          "countryCode": "CA",
+          "network": "SN1"
+        },
+        {
+          "id": 287,
+          "market": "N",
+          "countryCode": "CA",
+          "network": "SNE"
+        },
+        {
+          "id": 288,
+          "market": "N",
+          "countryCode": "CA",
+          "network": "SNO"
+        },
+        {
+          "id": 290,
+          "market": "N",
+          "countryCode": "CA",
+          "network": "SNP"
+        },
+        {
+          "id": 351,
+          "market": "A",
+          "countryCode": "US",
+          "network": "BSDET"
+        }
+      ],
+      "gameState": "LIVE",
+      "gameScheduleState": "OK",
+      "awayTeam": {
+        "id": 17,
+        "name": {
+          "default": "Red Wings"
+        },
+        "abbrev": "DET",
+        "score": 1,
+        "sog": 7,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg"
+      },
+      "homeTeam": {
+        "id": 6,
+        "name": {
+          "default": "Bruins"
+        },
+        "abbrev": "BOS",
+        "score": 0,
+        "sog": 3,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/BOS_light.svg"
+      },
+      "gameCenterLink": "/gamecenter/det-vs-bos/2023/11/24/2023020293",
+      "clock": {
+        "timeRemaining": "10:24",
+        "secondsRemaining": 624,
+        "running": true,
+        "inIntermission": false
+      },
+      "neutralSite": false,
+      "venueTimezone": "US/Eastern",
+      "period": 1,
+      "periodDescriptor": {
+        "number": 1,
+        "periodType": "REG"
+      },
+      "situation": {
+        "homeTeam": {
+          "abbrev": "BOS",
+          "situationDescriptions": [
+            "PP"
+          ],
+          "strength": 5
+        },
+        "awayTeam": {
+          "abbrev": "DET",
+          "strength": 4
+        },
+        "situationCode": "1451",
+        "timeRemaining": "00:21",
+        "secondsRemaining": 21
+      },
+      "goals": [
+        {
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "05:13",
+          "playerId": 8477456,
+          "name": {
+            "default": "J. Compher"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/DET/8477456.png",
+          "teamAbbrev": "DET",
+          "goalsToDate": 4,
+          "awayScore": 1,
+          "homeScore": 0,
+          "strength": "PP",
+          "highlightClip": 6341721550112
+        }
+      ]
+    },
+    {
+      "id": 2023020294,
+      "season": 20232024,
+      "gameType": 2,
+      "gameDate": "2023-11-24",
+      "venue": {
+        "default": "Wells Fargo Center"
+      },
+      "startTimeUTC": "2023-11-24T18:00:00Z",
+      "easternUTCOffset": "-05:00",
+      "venueUTCOffset": "-05:00",
+      "tvBroadcasts": [
+        {
+          "id": 27,
+          "market": "A",
+          "countryCode": "US",
+          "network": "MSG"
+        },
+        {
+          "id": 322,
+          "market": "H",
+          "countryCode": "US",
+          "network": "NBCSP"
+        },
+        {
+          "id": 324,
+          "market": "N",
+          "countryCode": "US",
+          "network": "NHLN"
+        }
+      ],
+      "gameState": "LIVE",
+      "gameScheduleState": "OK",
+      "awayTeam": {
+        "id": 3,
+        "name": {
+          "default": "Rangers"
+        },
+        "abbrev": "NYR",
+        "score": 2,
+        "sog": 5,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg"
+      },
+      "homeTeam": {
+        "id": 4,
+        "name": {
+          "default": "Flyers"
+        },
+        "abbrev": "PHI",
+        "score": 0,
+        "sog": 3,
+        "logo": "https://assets.nhle.com/logos/nhl/svg/PHI_light.svg"
+      },
+      "gameCenterLink": "/gamecenter/nyr-vs-phi/2023/11/24/2023020294",
+      "clock": {
+        "timeRemaining": "11:32",
+        "secondsRemaining": 692,
+        "running": true,
+        "inIntermission": false
+      },
+      "neutralSite": false,
+      "venueTimezone": "US/Eastern",
+      "period": 1,
+      "periodDescriptor": {
+        "number": 1,
+        "periodType": "REG"
+      },
+      "situation": {
+        "homeTeam": {
+          "abbrev": "PHI",
+          "strength": 4
+        },
+        "awayTeam": {
+          "abbrev": "NYR",
+          "situationDescriptions": [
+            "PP"
+          ],
+          "strength": 5
+        },
+        "situationCode": "1541",
+        "timeRemaining": "01:16",
+        "secondsRemaining": 76
+      },
+      "goals": [
+        {
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "00:45",
+          "playerId": 8476459,
+          "name": {
+            "default": "M. Zibanejad"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/NYR/8476459.png",
+          "teamAbbrev": "NYR",
+          "goalsToDate": 3,
+          "awayScore": 1,
+          "homeScore": 0,
+          "strength": "EV",
+          "highlightClip": 6341720750112
+        },
+        {
+          "period": 1,
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG"
+          },
+          "timeInPeriod": "01:53",
+          "playerId": 8475184,
+          "name": {
+            "default": "C. Kreider"
+          },
+          "mugshot": "https://assets.nhle.com/mugs/nhl/20232024/NYR/8475184.png",
+          "teamAbbrev": "NYR",
+          "goalsToDate": 11,
+          "awayScore": 2,
+          "homeScore": 0,
+          "strength": "EV",
+          "highlightClip": 6341721739112
+        }
+      ]
+    },
+    {
+      "id": 2023020295,
+      "season": 20232024,
+      "gameType": 2,
+      "gameDate": "2023-11-24",
+      "venue": {
+        "default": "United Center"
+      },
+      "startTimeUTC": "2023-11-24T19:00:00Z",
+      "easternUTCOffset": "-05:00",
+      "venueUTCOffset": "-06:00",
+      "tvBroadcasts": [
+        {
+          "id": 293,
+          "market": "A",
+          "countryCode": "CA",
+          "network": "TSN4"
+        },
+        {
+          "id": 318,
+          "market": "H",
+          "countryCode": "US",
+          "network": "NBCSCH"
+        }
+      ],
+      "gameState": "FUT",
+      "gameScheduleState": "OK",
+      "awayTeam": {
+        "id": 10,
+        "name": {
+          "default": "Maple Leafs"
+        },
+        "abbrev": "TOR",
+        "record": "10-5-2",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/TOR_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.5000"
+          },
+          {
+            "providerId": 4,
+            "value": "1.3700"
+          },
+          {
+            "providerId": 2,
+            "value": "-152.0000"
+          },
+          {
+            "providerId": 9,
+            "value": "-270.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "-268.0000"
+          },
+          {
+            "providerId": 6,
+            "value": "1.6300"
+          }
+        ]
+      },
+      "homeTeam": {
+        "id": 16,
+        "name": {
+          "default": "Blackhawks",
+          "es": "Black\thawks"
+        },
+        "abbrev": "CHI",
+        "record": "5-12-0",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.5000"
+          },
+          {
+            "providerId": 4,
+            "value": "3.0000"
+          },
+          {
+            "providerId": 2,
+            "value": "330.0000"
+          },
+          {
+            "providerId": 9,
+            "value": "220.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "214.0000"
+          },
+          {
+            "providerId": 6,
+            "value": "4.1000"
+          }
+        ]
+      },
+      "gameCenterLink": "/gamecenter/tor-vs-chi/2023/11/24/2023020295",
+      "neutralSite": false,
+      "venueTimezone": "America/Chicago",
+      "ticketsLink": "https://www.ticketmaster.com/event/04005EDC97F41433?brand=nhl&wt.mc_id=NHL_LEAGUE_CHI_SCORE_TAB_APP_GM7&utm_source=nhl.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CHI&utm_content=SCORE_TAB_APP_GM7",
+      "teamLeaders": [
+        {
+          "id": 8479318,
+          "name": {
+            "default": "A. Matthews"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/TOR/8479318.png",
+          "teamAbbrev": "TOR",
+          "category": "goals",
+          "value": 14
+        },
+        {
+          "id": 8484144,
+          "name": {
+            "default": "C. Bedard"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CHI/8484144.png",
+          "teamAbbrev": "CHI",
+          "category": "goals",
+          "value": 10
+        },
+        {
+          "id": 8477939,
+          "name": {
+            "default": "W. Nylander"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/TOR/8477939.png",
+          "teamAbbrev": "TOR",
+          "category": "assists",
+          "value": 15
+        },
+        {
+          "id": 8477495,
+          "name": {
+            "default": "S. Jones"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CHI/8477495.png",
+          "teamAbbrev": "CHI",
+          "category": "assists",
+          "value": 7
+        },
+        {
+          "id": 8479361,
+          "name": {
+            "default": "J. Woll"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/TOR/8479361.png",
+          "teamAbbrev": "TOR",
+          "category": "wins",
+          "value": 6
+        },
+        {
+          "id": 8475852,
+          "name": {
+            "default": "P. Mrazek",
+            "cs": "P. MrÃ¡zek",
+            "sk": "P. MrÃ¡zek"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CHI/8475852.png",
+          "teamAbbrev": "CHI",
+          "category": "wins",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": 2023020296,
+      "season": 20232024,
+      "gameType": 2,
+      "gameDate": "2023-11-24",
+      "venue": {
+        "default": "Prudential Center"
+      },
+      "startTimeUTC": "2023-11-24T20:00:00Z",
+      "easternUTCOffset": "-05:00",
+      "venueUTCOffset": "-05:00",
+      "tvBroadcasts": [
+        {
+          "id": 347,
+          "market": "A",
+          "countryCode": "US",
+          "network": "BSOH"
+        },
+        {
+          "id": 409,
+          "market": "H",
+          "countryCode": "US",
+          "network": "MSGSN"
+        }
+      ],
+      "gameState": "FUT",
+      "gameScheduleState": "OK",
+      "awayTeam": {
+        "id": 29,
+        "name": {
+          "default": "Blue Jackets"
+        },
+        "abbrev": "CBJ",
+        "record": "5-11-4",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.5500"
+          },
+          {
+            "providerId": 4,
+            "value": "2.9000"
+          },
+          {
+            "providerId": 2,
+            "value": "330.0000"
+          },
+          {
+            "providerId": 6,
+            "value": "3.9500"
+          },
+          {
+            "providerId": 9,
+            "value": "205.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "203.0000"
+          }
+        ]
+      },
+      "homeTeam": {
+        "id": 1,
+        "name": {
+          "default": "Devils"
+        },
+        "abbrev": "NJD",
+        "record": "8-8-1",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/NJD_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.5500"
+          },
+          {
+            "providerId": 4,
+            "value": "1.4000"
+          },
+          {
+            "providerId": 2,
+            "value": "-148.0000"
+          },
+          {
+            "providerId": 6,
+            "value": "1.6500"
+          },
+          {
+            "providerId": 9,
+            "value": "-250.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "-252.0000"
+          }
+        ]
+      },
+      "gameCenterLink": "/gamecenter/cbj-vs-njd/2023/11/24/2023020296",
+      "neutralSite": false,
+      "venueTimezone": "US/Eastern",
+      "ticketsLink": "https://www.ticketmaster.com/event/02005EDBD653919D?brand=nhl&wt.mc_id=NHL_LEAGUE_NJD_SCORE_TAB_APP_GM9&utm_source=nhl.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NJD&utm_content=SCORE_TAB_APP_GM9",
+      "teamLeaders": [
+        {
+          "id": 8476432,
+          "name": {
+            "default": "B. Jenner"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CBJ/8476432.png",
+          "teamAbbrev": "CBJ",
+          "category": "goals",
+          "value": 10
+        },
+        {
+          "id": 8475726,
+          "name": {
+            "default": "T. Toffoli"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NJD/8475726.png",
+          "teamAbbrev": "NJD",
+          "category": "goals",
+          "value": 9
+        },
+        {
+          "id": 8481559,
+          "name": {
+            "default": "J. Hughes"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NJD/8481559.png",
+          "teamAbbrev": "NJD",
+          "category": "assists",
+          "value": 16
+        },
+        {
+          "id": 8478460,
+          "name": {
+            "default": "Z. Werenski"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CBJ/8478460.png",
+          "teamAbbrev": "CBJ",
+          "category": "assists",
+          "value": 14
+        },
+        {
+          "id": 8477970,
+          "name": {
+            "default": "V. Vanecek",
+            "cs": "V. VanÄ›Äek",
+            "sk": "V. VanÄ›Äek"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NJD/8477970.png",
+          "teamAbbrev": "NJD",
+          "category": "wins",
+          "value": 7
+        },
+        {
+          "id": 8478007,
+          "name": {
+            "default": "E. Merzlikins"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CBJ/8478007.png",
+          "teamAbbrev": "CBJ",
+          "category": "wins",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": 2023020297,
+      "season": 20232024,
+      "gameType": 2,
+      "gameDate": "2023-11-24",
+      "venue": {
+        "default": "Enterprise Center"
+      },
+      "startTimeUTC": "2023-11-24T20:00:00Z",
+      "easternUTCOffset": "-05:00",
+      "venueUTCOffset": "-06:00",
+      "tvBroadcasts": [
+        {
+          "id": 357,
+          "market": "H",
+          "countryCode": "US",
+          "network": "BSMW"
+        },
+        {
+          "id": 375,
+          "market": "A",
+          "countryCode": "US",
+          "network": "BSSO"
+        }
+      ],
+      "gameState": "FUT",
+      "gameScheduleState": "OK",
+      "awayTeam": {
+        "id": 18,
+        "name": {
+          "default": "Predators"
+        },
+        "abbrev": "NSH",
+        "record": "8-10-0",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/NSH_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.1800"
+          },
+          {
+            "providerId": 4,
+            "value": "1.9500"
+          },
+          {
+            "providerId": 6,
+            "value": "2.3600"
+          },
+          {
+            "providerId": 9,
+            "value": "-110.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "-109.0000"
+          }
+        ]
+      },
+      "homeTeam": {
+        "id": 19,
+        "name": {
+          "default": "Blues"
+        },
+        "abbrev": "STL",
+        "record": "10-7-1",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/STL_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.1800"
+          },
+          {
+            "providerId": 4,
+            "value": "1.8500"
+          },
+          {
+            "providerId": 6,
+            "value": "2.5000"
+          },
+          {
+            "providerId": 9,
+            "value": "-110.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "-112.0000"
+          }
+        ]
+      },
+      "gameCenterLink": "/gamecenter/nsh-vs-stl/2023/11/24/2023020297",
+      "neutralSite": false,
+      "venueTimezone": "US/Central",
+      "ticketsLink": "https://www.ticketmaster.com/event/06005EDABFA33C8E?brand=nhl&wt.mc_id=NHL_LEAGUE_STL_SCORE_TAB_APP_GM9&utm_source=nhl.com&utm_medium=client&utm_campaign=NHL_LEAGUE_STL&utm_content=SCORE_TAB_APP_GM9",
+      "teamLeaders": [
+        {
+          "id": 8476887,
+          "name": {
+            "default": "F. Forsberg"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NSH/8476887.png",
+          "teamAbbrev": "NSH",
+          "category": "goals",
+          "value": 9
+        },
+        {
+          "id": 8480023,
+          "name": {
+            "default": "R. Thomas"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/STL/8480023.png",
+          "teamAbbrev": "STL",
+          "category": "goals",
+          "value": 7
+        },
+        {
+          "id": 8476887,
+          "name": {
+            "default": "F. Forsberg"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NSH/8476887.png",
+          "teamAbbrev": "NSH",
+          "category": "assists",
+          "value": 12
+        },
+        {
+          "id": 8480023,
+          "name": {
+            "default": "R. Thomas"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/STL/8480023.png",
+          "teamAbbrev": "STL",
+          "category": "assists",
+          "value": 11
+        },
+        {
+          "id": 8477424,
+          "name": {
+            "default": "J. Saros"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NSH/8477424.png",
+          "teamAbbrev": "NSH",
+          "category": "wins",
+          "value": 6
+        },
+        {
+          "id": 8476412,
+          "name": {
+            "default": "J. Binnington"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/STL/8476412.png",
+          "teamAbbrev": "STL",
+          "category": "wins",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": 2023020298,
+      "season": 20232024,
+      "gameType": 2,
+      "gameDate": "2023-11-24",
+      "venue": {
+        "default": "Capital One Arena"
+      },
+      "startTimeUTC": "2023-11-24T20:00:00Z",
+      "easternUTCOffset": "-05:00",
+      "venueUTCOffset": "-05:00",
+      "tvBroadcasts": [
+        {
+          "id": 289,
+          "market": "A",
+          "countryCode": "CA",
+          "network": "SNW"
+        },
+        {
+          "id": 517,
+          "market": "H",
+          "countryCode": "US",
+          "network": "MNMT"
+        }
+      ],
+      "gameState": "FUT",
+      "gameScheduleState": "OK",
+      "awayTeam": {
+        "id": 22,
+        "name": {
+          "default": "Oilers"
+        },
+        "abbrev": "EDM",
+        "record": "5-12-1",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.3300"
+          },
+          {
+            "providerId": 4,
+            "value": "1.7500"
+          },
+          {
+            "providerId": 2,
+            "value": "110.0000"
+          },
+          {
+            "providerId": 6,
+            "value": "2.0000"
+          },
+          {
+            "providerId": 9,
+            "value": "-142.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "-142.0000"
+          }
+        ]
+      },
+      "homeTeam": {
+        "id": 15,
+        "name": {
+          "default": "Capitals"
+        },
+        "abbrev": "WSH",
+        "record": "10-4-2",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/WSH_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.3300"
+          },
+          {
+            "providerId": 4,
+            "value": "2.1000"
+          },
+          {
+            "providerId": 2,
+            "value": "190.0000"
+          },
+          {
+            "providerId": 6,
+            "value": "3.0000"
+          },
+          {
+            "providerId": 9,
+            "value": "120.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "117.0000"
+          }
+        ]
+      },
+      "gameCenterLink": "/gamecenter/edm-vs-wsh/2023/11/24/2023020298",
+      "neutralSite": false,
+      "venueTimezone": "US/Eastern",
+      "ticketsLink": "https://www.ticketmaster.com/event/15005EDCF1B85153?brand=nhl&wt.mc_id=NHL_LEAGUE_WSH_SCORE_TAB_APP_GM12&utm_source=nhl.com&utm_medium=client&utm_campaign=NHL_LEAGUE_WSH&utm_content=SCORE_TAB_APP_GM12",
+      "teamLeaders": [
+        {
+          "id": 8475786,
+          "name": {
+            "default": "Z. Hyman"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/EDM/8475786.png",
+          "teamAbbrev": "EDM",
+          "category": "goals",
+          "value": 10
+        },
+        {
+          "id": 8478440,
+          "name": {
+            "default": "D. Strome"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/WSH/8478440.png",
+          "teamAbbrev": "WSH",
+          "category": "goals",
+          "value": 8
+        },
+        {
+          "id": 8477934,
+          "name": {
+            "default": "L. Draisaitl"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/EDM/8477934.png",
+          "teamAbbrev": "EDM",
+          "category": "assists",
+          "value": 17
+        },
+        {
+          "id": 8474590,
+          "name": {
+            "default": "J. Carlson"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/WSH/8474590.png",
+          "teamAbbrev": "WSH",
+          "category": "assists",
+          "value": 10
+        },
+        {
+          "id": 8475311,
+          "name": {
+            "default": "D. Kuemper"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/WSH/8475311.png",
+          "teamAbbrev": "WSH",
+          "category": "wins",
+          "value": 4
+        },
+        {
+          "id": 8479973,
+          "name": {
+            "default": "S. Skinner"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/EDM/8479973.png",
+          "teamAbbrev": "EDM",
+          "category": "wins",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": 2023020299,
+      "season": 20232024,
+      "gameType": 2,
+      "gameDate": "2023-11-24",
+      "venue": {
+        "default": "Honda Center"
+      },
+      "startTimeUTC": "2023-11-24T20:30:00Z",
+      "easternUTCOffset": "-05:00",
+      "venueUTCOffset": "-08:00",
+      "tvBroadcasts": [
+        {
+          "id": 284,
+          "market": "N",
+          "countryCode": "CA",
+          "network": "SN1"
+        },
+        {
+          "id": 287,
+          "market": "N",
+          "countryCode": "CA",
+          "network": "SNE"
+        },
+        {
+          "id": 288,
+          "market": "N",
+          "countryCode": "CA",
+          "network": "SNO"
+        },
+        {
+          "id": 290,
+          "market": "N",
+          "countryCode": "CA",
+          "network": "SNP"
+        },
+        {
+          "id": 341,
+          "market": "H",
+          "countryCode": "US",
+          "network": "BSSC"
+        },
+        {
+          "id": 355,
+          "market": "A",
+          "countryCode": "US",
+          "network": "BSW"
+        },
+        {
+          "id": 365,
+          "market": "H",
+          "countryCode": "US",
+          "network": "BSSD"
+        }
+      ],
+      "gameState": "FUT",
+      "gameScheduleState": "OK",
+      "awayTeam": {
+        "id": 26,
+        "name": {
+          "default": "Kings"
+        },
+        "abbrev": "LAK",
+        "record": "11-3-3",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/LAK_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.2800"
+          },
+          {
+            "providerId": 4,
+            "value": "1.5000"
+          },
+          {
+            "providerId": 2,
+            "value": "-118.0000"
+          },
+          {
+            "providerId": 9,
+            "value": "-205.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "-200.0000"
+          },
+          {
+            "providerId": 6,
+            "value": "1.7000"
+          }
+        ]
+      },
+      "homeTeam": {
+        "id": 24,
+        "name": {
+          "default": "Ducks"
+        },
+        "abbrev": "ANA",
+        "record": "9-10-0",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.2800"
+          },
+          {
+            "providerId": 4,
+            "value": "2.5500"
+          },
+          {
+            "providerId": 2,
+            "value": "265.0000"
+          },
+          {
+            "providerId": 9,
+            "value": "170.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "163.0000"
+          },
+          {
+            "providerId": 6,
+            "value": "3.7500"
+          }
+        ]
+      },
+      "gameCenterLink": "/gamecenter/lak-vs-ana/2023/11/24/2023020299",
+      "neutralSite": false,
+      "venueTimezone": "America/Los_Angeles",
+      "ticketsLink": "https://www.ticketmaster.com/event/09005ED790952280?brand=nhl&wt.mc_id=NHL_LEAGUE_ANA_SCORE_TAB_APP_GM12&utm_source=nhl.com&utm_medium=client&utm_campaign=NHL_LEAGUE_ANA&utm_content=SCORE_TAB_APP_GM12",
+      "teamLeaders": [
+        {
+          "id": 8478366,
+          "name": {
+            "default": "F. Vatrano"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/ANA/8478366.png",
+          "teamAbbrev": "ANA",
+          "category": "goals",
+          "value": 13
+        },
+        {
+          "id": 8479675,
+          "name": {
+            "default": "T. Moore"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/LAK/8479675.png",
+          "teamAbbrev": "LAK",
+          "category": "goals",
+          "value": 9
+        },
+        {
+          "id": 8477942,
+          "name": {
+            "default": "K. Fiala"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/LAK/8477942.png",
+          "teamAbbrev": "LAK",
+          "category": "assists",
+          "value": 13
+        },
+        {
+          "id": 8476458,
+          "name": {
+            "default": "R. Strome"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/ANA/8476458.png",
+          "teamAbbrev": "ANA",
+          "category": "assists",
+          "value": 12
+        },
+        {
+          "id": 8475660,
+          "name": {
+            "default": "C. Talbot"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/LAK/8475660.png",
+          "teamAbbrev": "LAK",
+          "category": "wins",
+          "value": 9
+        },
+        {
+          "id": 8480843,
+          "name": {
+            "default": "L. Dostal",
+            "cs": "L. DostÃ¡l",
+            "sk": "L. DostÃ¡l"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/ANA/8480843.png",
+          "teamAbbrev": "ANA",
+          "category": "wins",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": 2023020300,
+      "season": 20232024,
+      "gameType": 2,
+      "gameDate": "2023-11-24",
+      "venue": {
+        "default": "SAP Center at San Jose"
+      },
+      "startTimeUTC": "2023-11-24T20:30:00Z",
+      "easternUTCOffset": "-05:00",
+      "venueUTCOffset": "-08:00",
+      "tvBroadcasts": [
+        {
+          "id": 33,
+          "market": "A",
+          "countryCode": "CA",
+          "network": "RDS"
+        },
+        {
+          "id": 131,
+          "market": "A",
+          "countryCode": "CA",
+          "network": "TSN2"
+        },
+        {
+          "id": 314,
+          "market": "H",
+          "countryCode": "US",
+          "network": "NBCSCA"
+        }
+      ],
+      "gameState": "FUT",
+      "gameScheduleState": "OK",
+      "awayTeam": {
+        "id": 8,
+        "name": {
+          "default": "Canadiens"
+        },
+        "abbrev": "MTL",
+        "record": "8-9-2",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.3100"
+          },
+          {
+            "providerId": 4,
+            "value": "1.7000"
+          },
+          {
+            "providerId": 2,
+            "value": "108.0000"
+          },
+          {
+            "providerId": 9,
+            "value": "-148.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "-147.0000"
+          },
+          {
+            "providerId": 6,
+            "value": "1.9800"
+          }
+        ]
+      },
+      "homeTeam": {
+        "id": 28,
+        "name": {
+          "default": "Sharks"
+        },
+        "abbrev": "SJS",
+        "record": "3-15-1",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/SJS_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.3100"
+          },
+          {
+            "providerId": 4,
+            "value": "2.1500"
+          },
+          {
+            "providerId": 2,
+            "value": "195.0000"
+          },
+          {
+            "providerId": 9,
+            "value": "124.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "122.0000"
+          },
+          {
+            "providerId": 6,
+            "value": "3.0000"
+          }
+        ]
+      },
+      "gameCenterLink": "/gamecenter/mtl-vs-sjs/2023/11/24/2023020300",
+      "neutralSite": false,
+      "venueTimezone": "US/Pacific",
+      "ticketsLink": "https://www.ticketmaster.com/event/1C005ED5EA49713D?brand=nhl&wt.mc_id=NHL_LEAGUE_SJS_SCORE_TAB_APP_GM11&utm_source=nhl.com&utm_medium=client&utm_campaign=NHL_LEAGUE_SJS&utm_content=SCORE_TAB_APP_GM11",
+      "teamLeaders": [
+        {
+          "id": 8480018,
+          "name": {
+            "default": "N. Suzuki"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/MTL/8480018.png",
+          "teamAbbrev": "MTL",
+          "category": "goals",
+          "value": 6
+        },
+        {
+          "id": 8476881,
+          "name": {
+            "default": "T. Hertl"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/SJS/8476881.png",
+          "teamAbbrev": "SJS",
+          "category": "goals",
+          "value": 4
+        },
+        {
+          "id": 8480018,
+          "name": {
+            "default": "N. Suzuki"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/MTL/8480018.png",
+          "teamAbbrev": "MTL",
+          "category": "assists",
+          "value": 11
+        },
+        {
+          "id": 8476881,
+          "name": {
+            "default": "T. Hertl"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/SJS/8476881.png",
+          "teamAbbrev": "SJS",
+          "category": "assists",
+          "value": 8
+        },
+        {
+          "id": 8478470,
+          "name": {
+            "default": "S. Montembeault"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/MTL/8478470.png",
+          "teamAbbrev": "MTL",
+          "category": "wins",
+          "value": 4
+        },
+        {
+          "id": 8478406,
+          "name": {
+            "default": "M. Blackwood"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/SJS/8478406.png",
+          "teamAbbrev": "SJS",
+          "category": "wins",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": 2023020301,
+      "season": 20232024,
+      "gameType": 2,
+      "gameDate": "2023-11-24",
+      "venue": {
+        "default": "KeyBank Center"
+      },
+      "startTimeUTC": "2023-11-24T23:00:00Z",
+      "easternUTCOffset": "-05:00",
+      "venueUTCOffset": "-05:00",
+      "tvBroadcasts": [
+        {
+          "id": 281,
+          "market": "N",
+          "countryCode": "CA",
+          "network": "TVAS"
+        },
+        {
+          "id": 287,
+          "market": "N",
+          "countryCode": "CA",
+          "network": "SNE"
+        },
+        {
+          "id": 288,
+          "market": "N",
+          "countryCode": "CA",
+          "network": "SNO"
+        },
+        {
+          "id": 290,
+          "market": "N",
+          "countryCode": "CA",
+          "network": "SNP"
+        },
+        {
+          "id": 385,
+          "market": "N",
+          "countryCode": "US",
+          "network": "TNT"
+        },
+        {
+          "id": 519,
+          "market": "N",
+          "countryCode": "US",
+          "network": "MAX"
+        }
+      ],
+      "gameState": "FUT",
+      "gameScheduleState": "OK",
+      "awayTeam": {
+        "id": 5,
+        "name": {
+          "default": "Penguins"
+        },
+        "abbrev": "PIT",
+        "record": "9-9-0",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.2300"
+          },
+          {
+            "providerId": 4,
+            "value": "1.8000"
+          },
+          {
+            "providerId": 2,
+            "value": "133.0000"
+          },
+          {
+            "providerId": 9,
+            "value": "-125.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "-123.0000"
+          },
+          {
+            "providerId": 6,
+            "value": "2.2000"
+          }
+        ]
+      },
+      "homeTeam": {
+        "id": 7,
+        "name": {
+          "default": "Sabres"
+        },
+        "abbrev": "BUF",
+        "record": "8-9-2",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/BUF_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.2300"
+          },
+          {
+            "providerId": 4,
+            "value": "2.0000"
+          },
+          {
+            "providerId": 2,
+            "value": "155.0000"
+          },
+          {
+            "providerId": 9,
+            "value": "105.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "101.0000"
+          },
+          {
+            "providerId": 6,
+            "value": "2.6600"
+          }
+        ]
+      },
+      "gameCenterLink": "/gamecenter/pit-vs-buf/2023/11/24/2023020301",
+      "neutralSite": false,
+      "venueTimezone": "America/New_York",
+      "ticketsLink": "https://www.ticketmaster.com/event/00005EDACB03596F?brand=nhl&wt.mc_id=NHL_LEAGUE_BUF_SCORE_TAB_APP_GM10&utm_source=nhl.com&utm_medium=client&utm_campaign=NHL_LEAGUE_BUF&utm_content=SCORE_TAB_APP_GM10",
+      "teamLeaders": [
+        {
+          "id": 8471675,
+          "name": {
+            "default": "S. Crosby"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/PIT/8471675.png",
+          "teamAbbrev": "PIT",
+          "category": "goals",
+          "value": 12
+        },
+        {
+          "id": 8475784,
+          "name": {
+            "default": "J. Skinner"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/BUF/8475784.png",
+          "teamAbbrev": "BUF",
+          "category": "goals",
+          "value": 8
+        },
+        {
+          "id": 8477404,
+          "name": {
+            "default": "J. Guentzel"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/PIT/8477404.png",
+          "teamAbbrev": "PIT",
+          "category": "assists",
+          "value": 15
+        },
+        {
+          "id": 8480839,
+          "name": {
+            "default": "R. Dahlin"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/BUF/8480839.png",
+          "teamAbbrev": "BUF",
+          "category": "assists",
+          "value": 12
+        },
+        {
+          "id": 8477465,
+          "name": {
+            "default": "T. Jarry"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/PIT/8477465.png",
+          "teamAbbrev": "PIT",
+          "category": "wins",
+          "value": 6
+        },
+        {
+          "id": 8480045,
+          "name": {
+            "default": "U. Luukkonen"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/BUF/8480045.png",
+          "teamAbbrev": "BUF",
+          "category": "wins",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": 2023020302,
+      "season": 20232024,
+      "gameType": 2,
+      "gameDate": "2023-11-24",
+      "venue": {
+        "default": "Canadian Tire Centre"
+      },
+      "startTimeUTC": "2023-11-25T00:30:00Z",
+      "easternUTCOffset": "-05:00",
+      "venueUTCOffset": "-05:00",
+      "tvBroadcasts": [
+        {
+          "id": 33,
+          "market": "H",
+          "countryCode": "CA",
+          "network": "RDS"
+        },
+        {
+          "id": 294,
+          "market": "H",
+          "countryCode": "CA",
+          "network": "TSN5"
+        },
+        {
+          "id": 409,
+          "market": "A",
+          "countryCode": "US",
+          "network": "MSGSN"
+        }
+      ],
+      "gameState": "FUT",
+      "gameScheduleState": "OK",
+      "awayTeam": {
+        "id": 2,
+        "name": {
+          "default": "Islanders"
+        },
+        "abbrev": "NYI",
+        "record": "7-6-5",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/NYI_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.0500"
+          },
+          {
+            "providerId": 4,
+            "value": "2.1000"
+          },
+          {
+            "providerId": 2,
+            "value": "180.0000"
+          },
+          {
+            "providerId": 9,
+            "value": "110.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "110.0000"
+          }
+        ]
+      },
+      "homeTeam": {
+        "id": 9,
+        "name": {
+          "default": "Senators",
+          "fr": "SÃ©nateurs"
+        },
+        "abbrev": "OTT",
+        "record": "8-7-0",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.0500"
+          },
+          {
+            "providerId": 4,
+            "value": "1.7500"
+          },
+          {
+            "providerId": 2,
+            "value": "123.0000"
+          },
+          {
+            "providerId": 9,
+            "value": "-130.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "-133.0000"
+          }
+        ]
+      },
+      "gameCenterLink": "/gamecenter/nyi-vs-ott/2023/11/24/2023020302",
+      "neutralSite": false,
+      "venueTimezone": "US/Eastern",
+      "ticketsLink": "https://www.nhl.com/senators/tickets/",
+      "teamLeaders": [
+        {
+          "id": 8475754,
+          "name": {
+            "default": "B. Nelson"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NYI/8475754.png",
+          "teamAbbrev": "NYI",
+          "category": "goals",
+          "value": 10
+        },
+        {
+          "id": 8480801,
+          "name": {
+            "default": "B. Tkachuk"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/OTT/8480801.png",
+          "teamAbbrev": "OTT",
+          "category": "goals",
+          "value": 10
+        },
+        {
+          "id": 8482116,
+          "name": {
+            "default": "T. StÃ¼tzle"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/OTT/8482116.png",
+          "teamAbbrev": "OTT",
+          "category": "assists",
+          "value": 16
+        },
+        {
+          "id": 8478445,
+          "name": {
+            "default": "M. Barzal"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NYI/8478445.png",
+          "teamAbbrev": "NYI",
+          "category": "assists",
+          "value": 11
+        },
+        {
+          "id": 8476914,
+          "name": {
+            "default": "J. Korpisalo"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/OTT/8476914.png",
+          "teamAbbrev": "OTT",
+          "category": "wins",
+          "value": 5
+        },
+        {
+          "id": 8478009,
+          "name": {
+            "default": "I. Sorokin"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/NYI/8478009.png",
+          "teamAbbrev": "NYI",
+          "category": "wins",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": 2023020303,
+      "season": 20232024,
+      "gameType": 2,
+      "gameDate": "2023-11-24",
+      "venue": {
+        "default": "PNC Arena"
+      },
+      "startTimeUTC": "2023-11-25T01:00:00Z",
+      "easternUTCOffset": "-05:00",
+      "venueUTCOffset": "-05:00",
+      "tvBroadcasts": [
+        {
+          "id": 359,
+          "market": "A",
+          "countryCode": "US",
+          "network": "BSSUN"
+        },
+        {
+          "id": 375,
+          "market": "H",
+          "countryCode": "US",
+          "network": "BSSO"
+        }
+      ],
+      "gameState": "FUT",
+      "gameScheduleState": "OK",
+      "awayTeam": {
+        "id": 14,
+        "name": {
+          "default": "Lightning"
+        },
+        "abbrev": "TBL",
+        "record": "9-6-5",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.2700"
+          },
+          {
+            "providerId": 4,
+            "value": "2.3000"
+          },
+          {
+            "providerId": 2,
+            "value": "230.0000"
+          },
+          {
+            "providerId": 9,
+            "value": "130.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "135.0000"
+          }
+        ]
+      },
+      "homeTeam": {
+        "id": 12,
+        "name": {
+          "default": "Hurricanes",
+          "es": "Hurri\tcanes"
+        },
+        "abbrev": "CAR",
+        "record": "11-7-0",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.2700"
+          },
+          {
+            "providerId": 4,
+            "value": "1.6000"
+          },
+          {
+            "providerId": 2,
+            "value": "-106.0000"
+          },
+          {
+            "providerId": 9,
+            "value": "-155.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "-162.0000"
+          }
+        ]
+      },
+      "gameCenterLink": "/gamecenter/tbl-vs-car/2023/11/24/2023020303",
+      "neutralSite": false,
+      "venueTimezone": "US/Eastern",
+      "ticketsLink": "https://www.ticketmaster.com/event/2D005EF4A056438D?brand=nhl&wt.mc_id=NHL_LEAGUE_CAR_SCORE_TAB_APP_GM8&utm_source=nhl.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CAR&utm_content=SCORE_TAB_APP_GM8",
+      "teamLeaders": [
+        {
+          "id": 8476453,
+          "name": {
+            "default": "N. Kucherov",
+            "cs": "N. KuÄerov",
+            "fi": "N. Kutsherov",
+            "sk": "N. KuÄerov"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/TBL/8476453.png",
+          "teamAbbrev": "TBL",
+          "category": "goals",
+          "value": 13
+        },
+        {
+          "id": 8476882,
+          "name": {
+            "default": "T. Teravainen",
+            "cs": "T. TerÃ¤vÃ¤inen",
+            "fi": "T. TerÃ¤vÃ¤inen",
+            "sk": "T. TerÃ¤vÃ¤inen"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CAR/8476882.png",
+          "teamAbbrev": "CAR",
+          "category": "goals",
+          "value": 10
+        },
+        {
+          "id": 8475167,
+          "name": {
+            "default": "V. Hedman"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/TBL/8475167.png",
+          "teamAbbrev": "TBL",
+          "category": "assists",
+          "value": 17
+        },
+        {
+          "id": 8478427,
+          "name": {
+            "default": "S. Aho"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CAR/8478427.png",
+          "teamAbbrev": "CAR",
+          "category": "assists",
+          "value": 11
+        },
+        {
+          "id": 8477992,
+          "name": {
+            "default": "J. Johansson"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/TBL/8477992.png",
+          "teamAbbrev": "TBL",
+          "category": "wins",
+          "value": 8
+        },
+        {
+          "id": 8477293,
+          "name": {
+            "default": "A. Raanta"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CAR/8477293.png",
+          "teamAbbrev": "CAR",
+          "category": "wins",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "id": 2023020304,
+      "season": 20232024,
+      "gameType": 2,
+      "gameDate": "2023-11-24",
+      "venue": {
+        "default": "Amerant Bank Arena"
+      },
+      "startTimeUTC": "2023-11-25T01:00:00Z",
+      "easternUTCOffset": "-05:00",
+      "venueUTCOffset": "-05:00",
+      "tvBroadcasts": [
+        {
+          "id": 292,
+          "market": "A",
+          "countryCode": "CA",
+          "network": "TSN3"
+        },
+        {
+          "id": 353,
+          "market": "H",
+          "countryCode": "US",
+          "network": "BSFL"
+        }
+      ],
+      "gameState": "FUT",
+      "gameScheduleState": "OK",
+      "awayTeam": {
+        "id": 52,
+        "name": {
+          "default": "Jets"
+        },
+        "abbrev": "WPG",
+        "record": "11-5-2",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.3100"
+          },
+          {
+            "providerId": 4,
+            "value": "2.1500"
+          },
+          {
+            "providerId": 2,
+            "value": "190.0000"
+          },
+          {
+            "providerId": 9,
+            "value": "114.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "114.0000"
+          }
+        ]
+      },
+      "homeTeam": {
+        "id": 13,
+        "name": {
+          "default": "Panthers"
+        },
+        "abbrev": "FLA",
+        "record": "12-6-1",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.3100"
+          },
+          {
+            "providerId": 4,
+            "value": "1.7000"
+          },
+          {
+            "providerId": 2,
+            "value": "114.0000"
+          },
+          {
+            "providerId": 9,
+            "value": "-135.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "-137.0000"
+          }
+        ]
+      },
+      "gameCenterLink": "/gamecenter/wpg-vs-fla/2023/11/24/2023020304",
+      "neutralSite": false,
+      "venueTimezone": "US/Eastern",
+      "ticketsLink": "https://seatgeek.com/jets-at-panthers-tickets/11-24-2023-sunrise-florida-fla-live-arena-2/nhl/6066704?aid=15999&pid=website&rid=11242023&utm_medium=partnership&utm_source=panthers_ticketing&utm_campaign=website",
+      "teamLeaders": [
+        {
+          "id": 8478398,
+          "name": {
+            "default": "K. Connor"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/WPG/8478398.png",
+          "teamAbbrev": "WPG",
+          "category": "goals",
+          "value": 14
+        },
+        {
+          "id": 8477933,
+          "name": {
+            "default": "S. Reinhart"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/FLA/8477933.png",
+          "teamAbbrev": "FLA",
+          "category": "goals",
+          "value": 13
+        },
+        {
+          "id": 8476460,
+          "name": {
+            "default": "M. Scheifele"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/WPG/8476460.png",
+          "teamAbbrev": "WPG",
+          "category": "assists",
+          "value": 15
+        },
+        {
+          "id": 8479314,
+          "name": {
+            "default": "M. Tkachuk"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/FLA/8479314.png",
+          "teamAbbrev": "FLA",
+          "category": "assists",
+          "value": 14
+        },
+        {
+          "id": 8475683,
+          "name": {
+            "default": "S. Bobrovsky",
+            "cs": "S. Bobrovskij",
+            "sk": "S. Bobrovskij"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/FLA/8475683.png",
+          "teamAbbrev": "FLA",
+          "category": "wins",
+          "value": 9
+        },
+        {
+          "id": 8476945,
+          "name": {
+            "default": "C. Hellebuyck"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/WPG/8476945.png",
+          "teamAbbrev": "WPG",
+          "category": "wins",
+          "value": 9
+        }
+      ]
+    },
+    {
+      "id": 2023020305,
+      "season": 20232024,
+      "gameType": 2,
+      "gameDate": "2023-11-24",
+      "venue": {
+        "default": "American Airlines Center"
+      },
+      "startTimeUTC": "2023-11-25T01:30:00Z",
+      "easternUTCOffset": "-05:00",
+      "venueUTCOffset": "-06:00",
+      "tvBroadcasts": [
+        {
+          "id": 287,
+          "market": "N",
+          "countryCode": "CA",
+          "network": "SNE"
+        },
+        {
+          "id": 288,
+          "market": "N",
+          "countryCode": "CA",
+          "network": "SNO"
+        },
+        {
+          "id": 289,
+          "market": "N",
+          "countryCode": "CA",
+          "network": "SNW"
+        },
+        {
+          "id": 349,
+          "market": "H",
+          "countryCode": "US",
+          "network": "BSSW"
+        }
+      ],
+      "gameState": "FUT",
+      "gameScheduleState": "OK",
+      "awayTeam": {
+        "id": 20,
+        "name": {
+          "default": "Flames"
+        },
+        "abbrev": "CGY",
+        "record": "7-9-3",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/CGY_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.3100"
+          },
+          {
+            "providerId": 4,
+            "value": "2.4500"
+          },
+          {
+            "providerId": 2,
+            "value": "240.0000"
+          },
+          {
+            "providerId": 9,
+            "value": "150.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "149.0000"
+          }
+        ]
+      },
+      "homeTeam": {
+        "id": 25,
+        "name": {
+          "default": "Stars"
+        },
+        "abbrev": "DAL",
+        "record": "12-4-2",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/DAL_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.3100"
+          },
+          {
+            "providerId": 4,
+            "value": "1.5500"
+          },
+          {
+            "providerId": 2,
+            "value": "-109.0000"
+          },
+          {
+            "providerId": 9,
+            "value": "-180.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "-178.0000"
+          }
+        ]
+      },
+      "gameCenterLink": "/gamecenter/cgy-vs-dal/2023/11/24/2023020305",
+      "neutralSite": false,
+      "venueTimezone": "US/Central",
+      "ticketsLink": "https://www.ticketmaster.com/event/0C005EDAC3EF2FD1?brand=nhl&wt.mc_id=NHL_LEAGUE_DAL_SCORE_TAB_APP_GM10&utm_source=nhl.com&utm_medium=client&utm_campaign=NHL_LEAGUE_DAL&utm_content=SCORE_TAB_APP_GM10",
+      "teamLeaders": [
+        {
+          "id": 8470794,
+          "name": {
+            "default": "J. Pavelski"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/DAL/8470794.png",
+          "teamAbbrev": "DAL",
+          "category": "goals",
+          "value": 8
+        },
+        {
+          "id": 8476399,
+          "name": {
+            "default": "B. Coleman"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CGY/8476399.png",
+          "teamAbbrev": "CGY",
+          "category": "goals",
+          "value": 5
+        },
+        {
+          "id": 8480027,
+          "name": {
+            "default": "J. Robertson",
+            "sk": "",
+            "sv": ""
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/DAL/8480027.png",
+          "teamAbbrev": "DAL",
+          "category": "assists",
+          "value": 11
+        },
+        {
+          "id": 8475172,
+          "name": {
+            "default": "N. Kadri"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CGY/8475172.png",
+          "teamAbbrev": "CGY",
+          "category": "assists",
+          "value": 9
+        },
+        {
+          "id": 8479979,
+          "name": {
+            "default": "J. Oettinger"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/DAL/8479979.png",
+          "teamAbbrev": "DAL",
+          "category": "wins",
+          "value": 8
+        },
+        {
+          "id": 8474593,
+          "name": {
+            "default": "J. Markstrom",
+            "cs": "J. MarkstrÃ¶m",
+            "fi": "J. MarkstrÃ¶m",
+            "sk": "J. MarkstrÃ¶m"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/CGY/8474593.png",
+          "teamAbbrev": "CGY",
+          "category": "wins",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": 2023020306,
+      "season": 20232024,
+      "gameType": 2,
+      "gameDate": "2023-11-24",
+      "venue": {
+        "default": "Xcel Energy Center"
+      },
+      "startTimeUTC": "2023-11-25T01:30:00Z",
+      "easternUTCOffset": "-05:00",
+      "venueUTCOffset": "-06:00",
+      "tvBroadcasts": [
+        {
+          "id": 281,
+          "market": "N",
+          "countryCode": "CA",
+          "network": "TVAS"
+        },
+        {
+          "id": 385,
+          "market": "N",
+          "countryCode": "US",
+          "network": "TNT"
+        },
+        {
+          "id": 519,
+          "market": "N",
+          "countryCode": "US",
+          "network": "MAX"
+        }
+      ],
+      "gameState": "FUT",
+      "gameScheduleState": "OK",
+      "awayTeam": {
+        "id": 21,
+        "name": {
+          "default": "Avalanche"
+        },
+        "abbrev": "COL",
+        "record": "12-6-0",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg",
+        "odds": [
+          {
+            "providerId": 4,
+            "value": "1.8000"
+          },
+          {
+            "providerId": 3,
+            "value": "4.1200"
+          },
+          {
+            "providerId": 2,
+            "value": "140.0000"
+          },
+          {
+            "providerId": 9,
+            "value": "-115.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "-116.0000"
+          }
+        ]
+      },
+      "homeTeam": {
+        "id": 30,
+        "name": {
+          "default": "Wild"
+        },
+        "abbrev": "MIN",
+        "record": "5-8-4",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/MIN_light.svg",
+        "odds": [
+          {
+            "providerId": 4,
+            "value": "2.0000"
+          },
+          {
+            "providerId": 3,
+            "value": "4.1200"
+          },
+          {
+            "providerId": 2,
+            "value": "155.0000"
+          },
+          {
+            "providerId": 9,
+            "value": "-105.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "-105.0000"
+          }
+        ]
+      },
+      "gameCenterLink": "/gamecenter/col-vs-min/2023/11/24/2023020306",
+      "neutralSite": false,
+      "venueTimezone": "US/Central",
+      "ticketsLink": "https://www.ticketmaster.com/event/06005EDB256C85F0?brand=nhl&wt.mc_id=NHL_LEAGUE_MIN_SCORE_TAB_APP_GM9&utm_source=nhl.com&utm_medium=client&utm_campaign=NHL_LEAGUE_MIN&utm_content=SCORE_TAB_APP_GM9",
+      "teamLeaders": [
+        {
+          "id": 8478420,
+          "name": {
+            "default": "M. Rantanen"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/COL/8478420.png",
+          "teamAbbrev": "COL",
+          "category": "goals",
+          "value": 12
+        },
+        {
+          "id": 8478493,
+          "name": {
+            "default": "J. Eriksson Ek"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/MIN/8478493.png",
+          "teamAbbrev": "MIN",
+          "category": "goals",
+          "value": 8
+        },
+        {
+          "id": 8480069,
+          "name": {
+            "default": "C. Makar"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/COL/8480069.png",
+          "teamAbbrev": "COL",
+          "category": "assists",
+          "value": 24
+        },
+        {
+          "id": 8475692,
+          "name": {
+            "default": "M. Zuccarello"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/MIN/8475692.png",
+          "teamAbbrev": "MIN",
+          "category": "assists",
+          "value": 14
+        },
+        {
+          "id": 8480382,
+          "name": {
+            "default": "A. Georgiev",
+            "cs": "A. Georgijev",
+            "fi": "A. Georgijev",
+            "sk": "A. Georgijev"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/COL/8480382.png",
+          "teamAbbrev": "COL",
+          "category": "wins",
+          "value": 11
+        },
+        {
+          "id": 8470594,
+          "name": {
+            "default": "M. Fleury"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/MIN/8470594.png",
+          "teamAbbrev": "MIN",
+          "category": "wins",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": 2023020307,
+      "season": 20232024,
+      "gameType": 2,
+      "gameDate": "2023-11-24",
+      "venue": {
+        "default": "Climate Pledge Arena"
+      },
+      "startTimeUTC": "2023-11-25T03:00:00Z",
+      "easternUTCOffset": "-05:00",
+      "venueUTCOffset": "-08:00",
+      "tvBroadcasts": [
+        {
+          "id": 290,
+          "market": "A",
+          "countryCode": "CA",
+          "network": "SNP"
+        },
+        {
+          "id": 386,
+          "market": "H",
+          "countryCode": "US",
+          "network": "ROOT-NW"
+        }
+      ],
+      "gameState": "FUT",
+      "gameScheduleState": "OK",
+      "awayTeam": {
+        "id": 23,
+        "name": {
+          "default": "Canucks"
+        },
+        "abbrev": "VAN",
+        "record": "13-6-1",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.2100"
+          },
+          {
+            "providerId": 4,
+            "value": "1.8500"
+          },
+          {
+            "providerId": 2,
+            "value": "143.0000"
+          },
+          {
+            "providerId": 9,
+            "value": "-115.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "-115.0000"
+          }
+        ]
+      },
+      "homeTeam": {
+        "id": 55,
+        "name": {
+          "default": "Kraken"
+        },
+        "abbrev": "SEA",
+        "record": "8-8-5",
+        "logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+        "odds": [
+          {
+            "providerId": 3,
+            "value": "4.2100"
+          },
+          {
+            "providerId": 4,
+            "value": "1.9500"
+          },
+          {
+            "providerId": 2,
+            "value": "150.0000"
+          },
+          {
+            "providerId": 9,
+            "value": "-105.0000"
+          },
+          {
+            "providerId": 8,
+            "value": "-107.0000"
+          }
+        ]
+      },
+      "gameCenterLink": "/gamecenter/van-vs-sea/2023/11/24/2023020307",
+      "neutralSite": false,
+      "venueTimezone": "US/Pacific",
+      "ticketsLink": "https://www.ticketmaster.com/event/0F005EBFC30D4A71?brand=nhl&wt.mc_id=NHL_LEAGUE_SEA_SCORE_TAB_APP_GM11&utm_source=nhl.com&utm_medium=client&utm_campaign=NHL_LEAGUE_SEA&utm_content=SCORE_TAB_APP_GM11",
+      "teamLeaders": [
+        {
+          "id": 8478444,
+          "name": {
+            "default": "B. Boeser"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/VAN/8478444.png",
+          "teamAbbrev": "VAN",
+          "category": "goals",
+          "value": 13
+        },
+        {
+          "id": 8477955,
+          "name": {
+            "default": "J. McCann"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/SEA/8477955.png",
+          "teamAbbrev": "SEA",
+          "category": "goals",
+          "value": 9
+        },
+        {
+          "id": 8480800,
+          "name": {
+            "default": "Q. Hughes"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/VAN/8480800.png",
+          "teamAbbrev": "VAN",
+          "category": "assists",
+          "value": 23
+        },
+        {
+          "id": 8478407,
+          "name": {
+            "default": "V. Dunn"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/SEA/8478407.png",
+          "teamAbbrev": "SEA",
+          "category": "assists",
+          "value": 15
+        },
+        {
+          "id": 8477967,
+          "name": {
+            "default": "T. Demko"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/VAN/8477967.png",
+          "teamAbbrev": "VAN",
+          "category": "wins",
+          "value": 9
+        },
+        {
+          "id": 8475831,
+          "name": {
+            "default": "P. Grubauer"
+          },
+          "headshot": "https://assets.nhle.com/mugs/nhl/20232024/SEA/8475831.png",
+          "teamAbbrev": "SEA",
+          "category": "wins",
+          "value": 5
+        }
+      ]
+    }
+  ]
+}
