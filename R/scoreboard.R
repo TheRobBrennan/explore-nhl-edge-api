@@ -26,17 +26,20 @@ process_nhl_data <- function() {
     visiting_team_score <- if (!is.null(game$awayTeam.score)) game$awayTeam.score else {print("Visiting Team Score NA for game:"); print(game); NA}
     visiting_team_sog <- if (!is.null(game$awayTeam.sog)) game$awayTeam.sog else {print("Visiting Team SOG NA for game:"); print(game); NA}
 
-    # current_period <- if (!is.null(game$period)) game$period else {print("Current Period NA for game:"); print(game); NA}
-    # time_remaining <- if (!is.null(game$clock$timeRemaining)) game$clock$timeRemaining else {print("Time Remaining NA for game:"); print(game); NA}
+    current_period <- if (!is.null(game$periodDescriptor.number)) game$periodDescriptor.number else {print("Current Period NA for game:"); print(game); NA}
+    current_period_descriptor <- if (!is.null(game$periodDescriptor.periodType)) game$periodDescriptor.periodType else {print("Current Period NA for game:"); print(game); NA}
+    time_remaining <- if (!is.null(game$clock.timeRemaining)) game$clock.timeRemaining else {print("Time Remaining NA for game:"); print(game); NA}
 
 
     data.frame(
-      utc_datetime,
       local_datetime,
       visiting_team_abbr,
       visiting_team_score,
       home_team_abbr,
       home_team_score,
+      current_period,
+      time_remaining,
+      current_period_descriptor,
       visiting_team_sog,
       home_team_sog
     )
