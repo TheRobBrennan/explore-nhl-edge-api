@@ -11,60 +11,25 @@ source("R/constants.R")
 process_nhl_data <- function() {
   # Fetch data from the NHL Edge API
   response <- GET(NHL_EDGE_API_SCOREBOARD_URL)
-  data <- fromJSON(content(response, "text"), flatten = TRUE)
-  games <- data$games
+  data <- fromJSON(content(response, "text", encoding = "UTF-8"), flatten = TRUE)
+  games <- list(data$games)  # Assuming 'data' contains your example JSON structure
 
   scoreboard_df <- lapply(games, function(game) {
-    # Uncomment the next line to print the structure of each game object
-    # str(game)
+    utc_datetime <- if (!is.null(game$startTimeUTC)) ymd_hms(game$startTimeUTC) else NA
+    local_datetime <- if (!is.null(game$venueTimezone)) with_tz(utc_datetime, game$venueTimezone) else NA
 
-    # Initialize variables
-    utc_datetime <- NA
-    local_datetime <- NA
-    home_team_abbr <- NA
-    home_team_name <- NA
-    visiting_team_abbr <- NA
-    visiting_team_name <- NA
-    current_period <- NA
-    time_remaining <- NA
-    home_team_sog <- NA
-    visiting_team_sog <- NA
+    home_team_abbr <- if (!is.null(game$homeTeam$abbrev)) game$homeTeam$abbrev else NA
+    home_team_name <- if (!is.null(game$homeTeam$name$default)) game$homeTeam$name$default else NA
 
-  # Check if necessary fields are not NULL and set variables
-  if (!is.null(game["startTimeUTC"])) {
-    utc_string <- as.character(game["startTimeUTC"][[1]])
-    utc_datetime <- ymd_hms(utc_string)
+    visiting_team_abbr <- if (!is.null(game$awayTeam$abbrev)) game$awayTeam$abbrev else NA
+    visiting_team_name <- if (!is.null(game$awayTeam$name$default)) game$awayTeam$name$default else NA
 
-    if (!is.null(game["venueTimezone"]) && game["venueTimezone"][[1]] %in% OlsonNames()) {
-      timezone_string <- as.character(game["venueTimezone"][[1]])
-      local_datetime <- with_tz(utc_datetime, timezone_string)
-    } else {
-      local_datetime <- NA  # Assign NA if the timezone is not valid
-    }
-  }
-  if (!is.null(game["homeTeam"]) && !is.null(game["homeTeam"]["abbrev"])) {
-    home_team_abbr <- game["homeTeam"]["abbrev"][1]
-    home_team_name <- game["homeTeam"]["name"]["default"][1]
-  }
-  # TODO: Left off here. Fix based on the homeTeam code above and using ChatGPT
-  if (!is.null(game["awayTeam"]) && !is.null(game["awayTeam"][["abbrev"]])) {
-    visiting_team_abbr <- game["awayTeam"][["abbrev"]][[1]]
-    visiting_team_name <- game["awayTeam"][["name"]][["default"]][[1]]
-  }
-  if (!is.null(game["period"])) {
-    current_period <- game["period"][[1]]
-  }
-  if (!is.null(game["clock"]) && !is.null(game["clock"][["timeRemaining"]])) {
-    time_remaining <- game["clock"][["timeRemaining"]][[1]]
-  }
-  if (!is.null(game["homeTeam"]) && !is.null(game["homeTeam"][["sog"]])) {
-    home_team_sog <- game["homeTeam"][["sog"]][[1]]
-  }
-  if (!is.null(game["awayTeam"]) && !is.null(game["awayTeam"][["sog"]])) {
-    visiting_team_sog <- game["awayTeam"][["sog"]][[1]]
-  }
+    current_period <- if (!is.null(game$period)) game$period else NA
+    time_remaining <- if (!is.null(game$clock$timeRemaining)) game$clock$timeRemaining else NA
 
-    # Return a data frame with the variables
+    home_team_sog <- if (!is.null(game$homeTeam$sog)) game$homeTeam$sog else NA
+    visiting_team_sog <- if (!is.null(game$awayTeam$sog)) game$awayTeam$sog else NA
+
     data.frame(
       utc_datetime,
       local_datetime,
