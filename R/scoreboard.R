@@ -15,32 +15,30 @@ process_nhl_data <- function() {
   games <- list(data$games)  # Assuming 'data' contains your example JSON structure
 
   scoreboard_df <- lapply(games, function(game) {
-    utc_datetime <- if (!is.null(game$startTimeUTC)) ymd_hms(game$startTimeUTC) else NA
-    local_datetime <- if (!is.null(game$venueTimezone)) with_tz(utc_datetime, game$venueTimezone) else NA
+    utc_datetime <- if (!is.null(game$startTimeUTC)) ymd_hms(game$startTimeUTC) else {print("UTC DateTime NA for game:"); print(game); NA}
+    local_datetime <- if (!is.null(game$venueTimezone)) with_tz(utc_datetime, game$venueTimezone) else {print("Local DateTime NA for game:"); print(game); NA}
 
-    home_team_abbr <- if (!is.null(game$homeTeam$abbrev)) game$homeTeam$abbrev else NA
-    home_team_name <- if (!is.null(game$homeTeam$name$default)) game$homeTeam$name$default else NA
+    home_team_abbr <- if (!is.null(game$homeTeam.abbrev)) game$homeTeam.abbrev else {print("Home Team Abbreviation NA for game:"); print(game); NA}
+    home_team_score <- if (!is.null(game$homeTeam.score)) game$homeTeam.score else {print("Home Team Score NA for game:"); print(game); NA}
+    home_team_sog <- if (!is.null(game$homeTeam.sog)) game$homeTeam.sog else {print("Home Team SOG NA for game:"); print(game); NA}
 
-    visiting_team_abbr <- if (!is.null(game$awayTeam$abbrev)) game$awayTeam$abbrev else NA
-    visiting_team_name <- if (!is.null(game$awayTeam$name$default)) game$awayTeam$name$default else NA
+    visiting_team_abbr <- if (!is.null(game$awayTeam.abbrev)) game$awayTeam.abbrev else {print("Visiting Team Abbreviation NA for game:"); print(game); NA}
+    visiting_team_score <- if (!is.null(game$awayTeam.score)) game$awayTeam.score else {print("Visiting Team Score NA for game:"); print(game); NA}
+    visiting_team_sog <- if (!is.null(game$awayTeam.sog)) game$awayTeam.sog else {print("Visiting Team SOG NA for game:"); print(game); NA}
 
-    current_period <- if (!is.null(game$period)) game$period else NA
-    time_remaining <- if (!is.null(game$clock$timeRemaining)) game$clock$timeRemaining else NA
+    # current_period <- if (!is.null(game$period)) game$period else {print("Current Period NA for game:"); print(game); NA}
+    # time_remaining <- if (!is.null(game$clock$timeRemaining)) game$clock$timeRemaining else {print("Time Remaining NA for game:"); print(game); NA}
 
-    home_team_sog <- if (!is.null(game$homeTeam$sog)) game$homeTeam$sog else NA
-    visiting_team_sog <- if (!is.null(game$awayTeam$sog)) game$awayTeam$sog else NA
 
     data.frame(
       utc_datetime,
       local_datetime,
-      home_team_abbr,
-      home_team_name,
       visiting_team_abbr,
-      visiting_team_name,
-      current_period,
-      time_remaining,
-      home_team_sog,
-      visiting_team_sog
+      visiting_team_score,
+      home_team_abbr,
+      home_team_score,
+      visiting_team_sog,
+      home_team_sog
     )
   })
 
