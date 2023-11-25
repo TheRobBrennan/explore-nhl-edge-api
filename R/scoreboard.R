@@ -27,17 +27,8 @@ process_nhl_data <- function() {
     visiting_team_sog <- if (!is.null(game$awayTeam.sog)) game$awayTeam.sog else {print("Visiting Team SOG NA for game:"); print(game); NA}
 
     current_period <- if (!is.null(game$periodDescriptor.number)) game$periodDescriptor.number else {print("Current Period NA for game:"); print(game); NA}
-    current_period_descriptor <- if (!is.null(game$gameOutcome.lastPeriodType)) game$gameOutcome.lastPeriodType else {print("Game Outcome Last Period Type Descriptor NA for game:"); print(game); NA}
+    current_period_descriptor <- if (!is.null(game$periodDescriptor.periodType)) game$periodDescriptor.periodType else {print("Game Outcome Last Period Type Descriptor NA for game:"); print(game); NA}
     time_remaining <- if (!is.null(game$clock.timeRemaining)) game$clock.timeRemaining else {print("Time Remaining NA for game:"); print(game); NA}
-
-    current_period_descriptor <- case_when(
-      game$gameState == "FUT" ~ "",
-      game$gameOutcome.lastPeriodType == "REG" ~ "FINAL",
-      game$gameOutcome.lastPeriodType == "OT"  ~ "FINAL (OT)",
-      game$gameOutcome.lastPeriodType == "SO"  ~ "FINAL (SO)",
-      game$gameState == "OFF" ~ "IN PROGRESS",
-      TRUE ~ "IN PROGRESS"  # Default case if none of the above conditions are met
-    )
 
     data.frame(
       local_datetime,
