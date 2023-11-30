@@ -10,12 +10,12 @@ source("R/constants.R")
 # Function to fetch and process NHL Edge API data
 process_nhl_data <- function(source = "api", fileLocation = NULL) {
   if (source == "api") {
-    print("Fetching data from NHL Edge API...")
+    # print("Fetching data from the NHL Edge API")
     # Fetch data from the NHL Edge API
     response <- GET(NHL_EDGE_API_SCOREBOARD_URL)
     data <- fromJSON(content(response, "text", encoding = "UTF-8"), flatten = TRUE)
   } else if (source == "file" && !is.null(fileLocation)) {
-    print(paste("Reading data from ", fileLocation))
+    print(paste("Loading data from", fileLocation, "instead of the NHL Edge API"))
     # Read the JSON file
     data <- fromJSON(fileLocation, flatten = TRUE)
   } else {
@@ -91,9 +91,9 @@ process_nhl_data <- function(source = "api", fileLocation = NULL) {
   return(scoreboard_df)
 }
 
-# Run the process and display the data frame from the API
-scoreboard <- process_nhl_data(source = "api")
+# DEBUG: Load the data from a file instead of the API
 # scoreboard <- process_nhl_data(source = "file", fileLocation = "data/score-now-20231129.json")
 
-# Display the scoreboard
+# Run the process and display the data frame from the API
+scoreboard <- process_nhl_data(source = "api")
 View(scoreboard)
