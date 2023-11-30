@@ -8,21 +8,18 @@ library(lubridate)
 source("R/constants.R")
 
 # Function to fetch and process NHL Edge API data
-process_nhl_data <- function(source = "api") {
+process_nhl_data <- function(source = "api", fileLocation = NULL) {
   if (source == "api") {
-    print("Loading data from the NHL Edge API...")
+    print("Fetching data from NHL Edge API...")
     # Fetch data from the NHL Edge API
     response <- GET(NHL_EDGE_API_SCOREBOARD_URL)
     data <- fromJSON(content(response, "text", encoding = "UTF-8"), flatten = TRUE)
-  } else if (source == "file") {
-    print("Reading data from file...")
-    # Path to the JSON file
-    json_file <- "data/score-now-20231129.json"
-
+  } else if (source == "file" && !is.null(fileLocation)) {
+    print(paste("Reading data from ", fileLocation))
     # Read the JSON file
-    data <- fromJSON(json_file, flatten = TRUE)
+    data <- fromJSON(fileLocation, flatten = TRUE)
   } else {
-    stop("Invalid data source. Use 'api' or 'file'.")
+    stop("Invalid data source or missing file location.")
   }
 
   games <- list(data$games)  # Assuming 'data' contains your example JSON structure
@@ -96,7 +93,7 @@ process_nhl_data <- function(source = "api") {
 
 # Run the process and display the data frame from the API
 scoreboard <- process_nhl_data(source = "api")
-# scoreboard <- process_nhl_data(source = "file")
+# scoreboard <- process_nhl_data(source = "file", fileLocation = "data/score-now-20231129.json")
 
 # Display the scoreboard
 View(scoreboard)
