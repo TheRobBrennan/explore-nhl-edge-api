@@ -94,6 +94,6 @@ process_nhl_data <- function(source = "api", fileLocation = NULL) {
 # DEBUG: Load the data from a file instead of the API
 # scoreboard <- process_nhl_data(source = "file", fileLocation = "data/score-now-20231129.json")
 
-# Run the process and display the data frame from the API
-scoreboard <- process_nhl_data(source = "api")
+# Run the process and display the data frame
+scoreboard <- process_nhl_data()
 View(scoreboard)
