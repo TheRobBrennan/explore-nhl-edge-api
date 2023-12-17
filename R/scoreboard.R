@@ -25,6 +25,9 @@ process_nhl_data <- function(source = "api", fileLocation = NULL) {
   games <- list(data$games)  # Assuming 'data' contains your example JSON structure
 
   scoreboard_df <- lapply(games, function(game) {
+    # NHL Gamecenter URL - https://www.nhl.com/gamecenter/<nhl_game_id>
+    nhl_game_id <- if (!is.null(game$id)) game$id else {print("NHL ID NA for game:"); print(game); NA}
+
     utc_datetime <- if (!is.null(game$startTimeUTC)) ymd_hms(game$startTimeUTC) else {print("UTC DateTime NA for game:"); print(game); NA}
     local_datetime <- if (!is.null(game$venueTimezone)) with_tz(utc_datetime, NHL_EDGE_API_TIMEZONE) else {print("Local DateTime NA for game:"); print(game); NA}
 
@@ -70,6 +73,7 @@ process_nhl_data <- function(source = "api", fileLocation = NULL) {
     }
 
     data.frame(
+      nhl_game_id,
       local_datetime,
       visiting_team_abbr,
       visiting_team_score,
