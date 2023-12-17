@@ -12,7 +12,6 @@ library(lubridate)
 
 THREE_MINUTES_IN_SECONDS <- 60 * 3
 DELAY_IN_SECONDS <- THREE_MINUTES_IN_SECONDS
-# DELAY_IN_SECONDS <- 15
 EXECUTION_ATTEMPTS <- 1
 EMPTY_SPACES <- "    "
 
@@ -20,7 +19,8 @@ EMPTY_SPACES <- "    "
 NHL_SCOREBOARD_SCRIPT <- sprintf("%s/R/scoreboard.R", getwd())
 
 while (TRUE) {
-  print(paste("Refreshing NHL scoreboard data at", Sys.time(), "- Attempt #", EXECUTION_ATTEMPTS))
+  # Format Sys.time() to display with six-digit precision
+  print(paste("Refreshing NHL scoreboard data at", format(Sys.time(), "%Y-%m-%d %H:%M:%OS6"), "- Attempt #", EXECUTION_ATTEMPTS))
 
   # Remove data frames before refreshing scoreboard data
   if (exists("scoreboard")) {
@@ -33,7 +33,8 @@ while (TRUE) {
   if (exists("scoreboard")) {
     # Check if the data frame contains at least one row of data (fixes a bug where a day range is specified where games do NOT exist - 2023.04.07 is an example)
     if (nrow(scoreboard) > 0) {
-      print(paste(EMPTY_SPACES, "-> NHL scoreboard available at", Sys.time()))
+      # Format Sys.time() to display with six-digit precision
+      print(paste(EMPTY_SPACES, "-> NHL scoreboard available at", format(Sys.time(), "%Y-%m-%d %H:%M:%OS6")))
       View(scoreboard)
     } else {
       print("The scoreboard data frame exists, but it does not contain any data.")
