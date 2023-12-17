@@ -36,21 +36,17 @@ process_nhl_data <- function(source = "api", fileLocation = NULL) {
     visiting_team_score <- if (!is.null(game$awayTeam.score)) game$awayTeam.score else {print("Visiting Team Score NA for game:"); print(game); NA}
     visiting_team_sog <- if (!is.null(game$awayTeam.sog)) game$awayTeam.sog else {print("Visiting Team SOG NA for game:"); print(game); NA}
 
-    # TODO: Fix the display of intermission values
     # Setting the current period
     current_period <- if (!is.null(game$periodDescriptor.number)) {
       period <- game$periodDescriptor.number
       if (!is.null(game$clock.inIntermission)) {
         inIntermission <- game$clock.inIntermission
 
-        # print(paste("Game ID:", game$id, " has an inIntermission value of: ", inIntermission))
-        # print(inIntermission)
-
         # Create a logical vector to index non-NA elements in 'inIntermission'
         non_na_index <- !is.na(inIntermission)
 
-        # Append " (INT)" to 'period' where 'inIntermission' is TRUE and not NA
-        period[non_na_index & inIntermission] <- paste0(period[non_na_index & inIntermission], " INT")
+        # Append "INT" before 'period' where 'inIntermission' is TRUE and not NA
+        period[non_na_index & inIntermission] <- paste0("INT", period[non_na_index & inIntermission])
 
         # Return the vector of 'period' values
         period
