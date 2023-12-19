@@ -32,10 +32,12 @@ process_nhl_data <- function(source = "api", fileLocation = NULL) {
     game_start <- if (!is.null(game$venueTimezone)) with_tz(utc_datetime, NHL_EDGE_API_TIMEZONE) else {print("Local DateTime NA for game:"); print(game); NA}
 
     home <- if (!is.null(game$homeTeam.abbrev)) game$homeTeam.abbrev else {print("Home Team Abbreviation NA for game:"); print(game); NA}
+    home_record <- if (!is.null(game$homeTeam.record)) game$homeTeam.record else {print("Home Team Record NA for game:"); print(game); NA}
     home_score <- if (!is.null(game$homeTeam.score)) game$homeTeam.score else {print("Home Team Score NA for game:"); print(game); NA}
     home_sog <- if (!is.null(game$homeTeam.sog)) game$homeTeam.sog else {print("Home Team SOG NA for game:"); print(game); NA}
 
     away <- if (!is.null(game$awayTeam.abbrev)) game$awayTeam.abbrev else {print("Visiting Team Abbreviation NA for game:"); print(game); NA}
+    away_record <- if (!is.null(game$awayTeam.record)) game$awayTeam.record else {print("Visiting Team Record NA for game:"); print(game); NA}
     away_score <- if (!is.null(game$awayTeam.score)) game$awayTeam.score else {print("Visiting Team Score NA for game:"); print(game); NA}
     away_sog <- if (!is.null(game$awayTeam.sog)) game$awayTeam.sog else {print("Visiting Team SOG NA for game:"); print(game); NA}
 
@@ -76,9 +78,11 @@ process_nhl_data <- function(source = "api", fileLocation = NULL) {
       game_id,
       game_start,
       away,
+      away_record,
       away_score,
       away_sog,
       home,
+      home_record,
       home_score,
       home_sog,
       period,
