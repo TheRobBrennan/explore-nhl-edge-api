@@ -67,7 +67,6 @@ process_nhl_data <- function(source = "api", fileLocation = NULL) {
     # TODO: We can probably remove this sometime soon once we have the current_period corrected
     period_desc <- if (!is.null(game$periodDescriptor.periodType)) game$periodDescriptor.periodType else {print("Game Outcome Last Period Type Descriptor NA for game:"); print(game); NA}
 
-    # TODO: This is correct. DO NOT CHANGE OR DELETE.
     time_remaining <- if (!is.null(game$clock.timeRemaining)) {
       game$clock.timeRemaining
     } else {
