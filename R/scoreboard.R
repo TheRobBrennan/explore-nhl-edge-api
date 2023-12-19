@@ -37,7 +37,7 @@ process_nhl_data <- function(source = "api", fileLocation = NULL) {
 
     away <- if (!is.null(game$awayTeam.abbrev)) game$awayTeam.abbrev else {print("Visiting Team Abbreviation NA for game:"); print(game); NA}
     away_score <- if (!is.null(game$awayTeam.score)) game$awayTeam.score else {print("Visiting Team Score NA for game:"); print(game); NA}
-    visiting_team_sog <- if (!is.null(game$awayTeam.sog)) game$awayTeam.sog else {print("Visiting Team SOG NA for game:"); print(game); NA}
+    away_sog <- if (!is.null(game$awayTeam.sog)) game$awayTeam.sog else {print("Visiting Team SOG NA for game:"); print(game); NA}
 
     # Setting the current period
     current_period <- if (!is.null(game$periodDescriptor.number)) {
@@ -82,7 +82,7 @@ process_nhl_data <- function(source = "api", fileLocation = NULL) {
       current_period,
       time_remaining,
       current_period_descriptor,
-      visiting_team_sog,
+      away_sog,
       home_sog
     )
   })
