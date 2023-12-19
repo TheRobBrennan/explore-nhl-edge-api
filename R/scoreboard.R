@@ -33,7 +33,7 @@ process_nhl_data <- function(source = "api", fileLocation = NULL) {
 
     home <- if (!is.null(game$homeTeam.abbrev)) game$homeTeam.abbrev else {print("Home Team Abbreviation NA for game:"); print(game); NA}
     home_score <- if (!is.null(game$homeTeam.score)) game$homeTeam.score else {print("Home Team Score NA for game:"); print(game); NA}
-    home_team_sog <- if (!is.null(game$homeTeam.sog)) game$homeTeam.sog else {print("Home Team SOG NA for game:"); print(game); NA}
+    home_sog <- if (!is.null(game$homeTeam.sog)) game$homeTeam.sog else {print("Home Team SOG NA for game:"); print(game); NA}
 
     visiting_team_abbr <- if (!is.null(game$awayTeam.abbrev)) game$awayTeam.abbrev else {print("Visiting Team Abbreviation NA for game:"); print(game); NA}
     visiting_team_score <- if (!is.null(game$awayTeam.score)) game$awayTeam.score else {print("Visiting Team Score NA for game:"); print(game); NA}
@@ -83,7 +83,7 @@ process_nhl_data <- function(source = "api", fileLocation = NULL) {
       time_remaining,
       current_period_descriptor,
       visiting_team_sog,
-      home_team_sog
+      home_sog
     )
   })
 
