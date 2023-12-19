@@ -77,13 +77,13 @@ process_nhl_data <- function(source = "api", fileLocation = NULL) {
       game_start,
       away,
       away_score,
+      away_sog,
       home,
       home_score,
+      home_sog,
       period,
       time_remaining,
-      period_desc,
-      away_sog,
-      home_sog
+      period_desc
     )
   })
 
