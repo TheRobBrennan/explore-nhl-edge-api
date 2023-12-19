@@ -25,22 +25,22 @@ process_nhl_data <- function(source = "api", fileLocation = NULL) {
   games <- list(data$games)  # Assuming 'data' contains your example JSON structure
 
   scoreboard_df <- lapply(games, function(game) {
-    # NHL Gamecenter URL - https://www.nhl.com/gamecenter/<nhl_game_id>
-    nhl_game_id <- if (!is.null(game$id)) game$id else {print("NHL ID NA for game:"); print(game); NA}
+    # NHL Gamecenter URL - https://www.nhl.com/gamecenter/<game_id>
+    game_id <- if (!is.null(game$id)) game$id else {print("NHL ID NA for game:"); print(game); NA}
 
     utc_datetime <- if (!is.null(game$startTimeUTC)) ymd_hms(game$startTimeUTC) else {print("UTC DateTime NA for game:"); print(game); NA}
-    local_datetime <- if (!is.null(game$venueTimezone)) with_tz(utc_datetime, NHL_EDGE_API_TIMEZONE) else {print("Local DateTime NA for game:"); print(game); NA}
+    game_start <- if (!is.null(game$venueTimezone)) with_tz(utc_datetime, NHL_EDGE_API_TIMEZONE) else {print("Local DateTime NA for game:"); print(game); NA}
 
-    home_team_abbr <- if (!is.null(game$homeTeam.abbrev)) game$homeTeam.abbrev else {print("Home Team Abbreviation NA for game:"); print(game); NA}
-    home_team_score <- if (!is.null(game$homeTeam.score)) game$homeTeam.score else {print("Home Team Score NA for game:"); print(game); NA}
-    home_team_sog <- if (!is.null(game$homeTeam.sog)) game$homeTeam.sog else {print("Home Team SOG NA for game:"); print(game); NA}
+    home <- if (!is.null(game$homeTeam.abbrev)) game$homeTeam.abbrev else {print("Home Team Abbreviation NA for game:"); print(game); NA}
+    home_score <- if (!is.null(game$homeTeam.score)) game$homeTeam.score else {print("Home Team Score NA for game:"); print(game); NA}
+    home_sog <- if (!is.null(game$homeTeam.sog)) game$homeTeam.sog else {print("Home Team SOG NA for game:"); print(game); NA}
 
-    visiting_team_abbr <- if (!is.null(game$awayTeam.abbrev)) game$awayTeam.abbrev else {print("Visiting Team Abbreviation NA for game:"); print(game); NA}
-    visiting_team_score <- if (!is.null(game$awayTeam.score)) game$awayTeam.score else {print("Visiting Team Score NA for game:"); print(game); NA}
-    visiting_team_sog <- if (!is.null(game$awayTeam.sog)) game$awayTeam.sog else {print("Visiting Team SOG NA for game:"); print(game); NA}
+    away <- if (!is.null(game$awayTeam.abbrev)) game$awayTeam.abbrev else {print("Visiting Team Abbreviation NA for game:"); print(game); NA}
+    away_score <- if (!is.null(game$awayTeam.score)) game$awayTeam.score else {print("Visiting Team Score NA for game:"); print(game); NA}
+    away_sog <- if (!is.null(game$awayTeam.sog)) game$awayTeam.sog else {print("Visiting Team SOG NA for game:"); print(game); NA}
 
     # Setting the current period
-    current_period <- if (!is.null(game$periodDescriptor.number)) {
+    period <- if (!is.null(game$periodDescriptor.number)) {
       period <- game$periodDescriptor.number
       if (!is.null(game$clock.inIntermission)) {
         inIntermission <- game$clock.inIntermission
@@ -63,7 +63,7 @@ process_nhl_data <- function(source = "api", fileLocation = NULL) {
     }
 
     # TODO: We can probably remove this sometime soon once we have the current_period corrected
-    current_period_descriptor <- if (!is.null(game$periodDescriptor.periodType)) game$periodDescriptor.periodType else {print("Game Outcome Last Period Type Descriptor NA for game:"); print(game); NA}
+    period_desc <- if (!is.null(game$periodDescriptor.periodType)) game$periodDescriptor.periodType else {print("Game Outcome Last Period Type Descriptor NA for game:"); print(game); NA}
 
     # TODO: This is correct. DO NOT CHANGE OR DELETE.
     time_remaining <- if (!is.null(game$clock.timeRemaining)) {
@@ -73,17 +73,17 @@ process_nhl_data <- function(source = "api", fileLocation = NULL) {
     }
 
     data.frame(
-      nhl_game_id,
-      local_datetime,
-      visiting_team_abbr,
-      visiting_team_score,
-      home_team_abbr,
-      home_team_score,
-      current_period,
+      game_id,
+      game_start,
+      away,
+      away_score,
+      away_sog,
+      home,
+      home_score,
+      home_sog,
+      period,
       time_remaining,
-      current_period_descriptor,
-      visiting_team_sog,
-      home_team_sog
+      period_desc
     )
   })
 
