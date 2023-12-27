@@ -1,3 +1,6 @@
+# Set DEBUG_VERBOSE to true if you would like to see details logged to the console (such as scoreboard_df game details)
+DEBUG_VERBOSE <- FALSE
+
 # Get today's date in the format YYYY-MM-DD
 todays_date <- format(Sys.Date(), "%Y-%m-%d")
 

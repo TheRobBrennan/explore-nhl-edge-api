@@ -24,71 +24,71 @@ process_nhl_data <- function(source = "api", fileLocation = NULL, EXECUTION_ATTE
 
   games <- list(data$games)  # Assuming 'data' contains your example JSON structure
 
-  scoreboard_df <- lapply(games, function(game) {
-    # NHL Gamecenter URL - https://www.nhl.com/gamecenter/<game_id>
-    game_id <- if (!is.null(game$id)) game$id else {print("NHL ID NA for game:"); print(game); NA}
+# Assuming DEBUG_VERBOSE is defined somewhere in your script
+# DEBUG_VERBOSE <- TRUE or FALSE
 
-    utc_datetime <- if (!is.null(game$startTimeUTC)) ymd_hms(game$startTimeUTC) else {print("UTC DateTime NA for game:"); print(game); NA}
-    game_start <- if (!is.null(game$venueTimezone)) with_tz(utc_datetime, NHL_EDGE_API_TIMEZONE) else {print("Local DateTime NA for game:"); print(game); NA}
+scoreboard_df <- lapply(games, function(game) {
+  # NHL Gamecenter URL - https://www.nhl.com/gamecenter/<game_id>
+  game_id <- if (!is.null(game$id)) game$id else {if (DEBUG_VERBOSE) {print("NHL ID NA for game:"); print(game)}; NA}
 
-    home <- if (!is.null(game$homeTeam.abbrev)) game$homeTeam.abbrev else {print("Home Team Abbreviation NA for game:"); print(game); NA}
-    home_record <- if (!is.null(game$homeTeam.record)) game$homeTeam.record else {print("Home Team Record NA for game:"); print(game); NA}
-    home_score <- if (!is.null(game$homeTeam.score)) game$homeTeam.score else {print("Home Team Score NA for game:"); print(game); NA}
-    home_sog <- if (!is.null(game$homeTeam.sog)) game$homeTeam.sog else {print("Home Team SOG NA for game:"); print(game); NA}
+  utc_datetime <- if (!is.null(game$startTimeUTC)) ymd_hms(game$startTimeUTC) else {if (DEBUG_VERBOSE) {print("UTC DateTime NA for game:"); print(game)}; NA}
+  game_start <- if (!is.null(game$venueTimezone)) with_tz(utc_datetime, NHL_EDGE_API_TIMEZONE) else {if (DEBUG_VERBOSE) {print("Local DateTime NA for game:"); print(game)}; NA}
 
-    away <- if (!is.null(game$awayTeam.abbrev)) game$awayTeam.abbrev else {print("Visiting Team Abbreviation NA for game:"); print(game); NA}
-    away_record <- if (!is.null(game$awayTeam.record)) game$awayTeam.record else {print("Visiting Team Record NA for game:"); print(game); NA}
-    away_score <- if (!is.null(game$awayTeam.score)) game$awayTeam.score else {print("Visiting Team Score NA for game:"); print(game); NA}
-    away_sog <- if (!is.null(game$awayTeam.sog)) game$awayTeam.sog else {print("Visiting Team SOG NA for game:"); print(game); NA}
+  home <- if (!is.null(game$homeTeam.abbrev)) game$homeTeam.abbrev else {if (DEBUG_VERBOSE) {print("Home Team Abbreviation NA for game:"); print(game)}; NA}
+  home_record <- if (!is.null(game$homeTeam.record)) game$homeTeam.record else {if (DEBUG_VERBOSE) {print("Home Team Record NA for game:"); print(game)}; NA}
+  home_score <- if (!is.null(game$homeTeam.score)) game$homeTeam.score else {if (DEBUG_VERBOSE) {print("Home Team Score NA for game:"); print(game)}; NA}
+  home_sog <- if (!is.null(game$homeTeam.sog)) game$homeTeam.sog else {if (DEBUG_VERBOSE) {print("Home Team SOG NA for game:"); print(game)}; NA}
 
-    # Setting the current period
-    period <- if (!is.null(game$periodDescriptor.number)) {
-      period <- game$periodDescriptor.number
-      if (!is.null(game$clock.inIntermission)) {
-        inIntermission <- game$clock.inIntermission
+  away <- if (!is.null(game$awayTeam.abbrev)) game$awayTeam.abbrev else {if (DEBUG_VERBOSE) {print("Visiting Team Abbreviation NA for game:"); print(game)}; NA}
+  away_record <- if (!is.null(game$awayTeam.record)) game$awayTeam.record else {if (DEBUG_VERBOSE) {print("Visiting Team Record NA for game:"); print(game)}; NA}
+  away_score <- if (!is.null(game$awayTeam.score)) game$awayTeam.score else {if (DEBUG_VERBOSE) {print("Visiting Team Score NA for game:"); print(game)}; NA}
+  away_sog <- if (!is.null(game$awayTeam.sog)) game$awayTeam.sog else {if (DEBUG_VERBOSE) {print("Visiting Team SOG NA for game:"); print(game)}; NA}
 
-        # Create a logical vector to index non-NA elements in 'inIntermission'
-        non_na_index <- !is.na(inIntermission)
+  # Setting the current period
+  period <- if (!is.null(game$periodDescriptor.number)) {
+    period <- game$periodDescriptor.number
+    if (!is.null(game$clock.inIntermission)) {
+      inIntermission <- game$clock.inIntermission
 
-        # Append "INT" before 'period' where 'inIntermission' is TRUE and not NA
-        period[non_na_index & inIntermission] <- paste0("INT", period[non_na_index & inIntermission])
+      # Create a logical vector to index non-NA elements in 'inIntermission'
+      non_na_index <- !is.na(inIntermission)
 
-        # Return the vector of 'period' values
-        period
-      } else {
-        # print(paste("Game ID:", game$id, " is not in intermission."))
-        period
-      }
+      # Append "INT" before 'period' where 'inIntermission' is TRUE and not NA
+      period[non_na_index & inIntermission] <- paste0("INT", period[non_na_index & inIntermission])
+
+      # Return the vector of 'period' values
+      period
     } else {
-      # print(paste("Game ID:", game$id, " has not started."))
-      NA  # No current period information
+      period
     }
+  } else {
+    NA  # No current period information
+  }
 
-    # TODO: We can probably remove this sometime soon once we have the current_period corrected
-    period_desc <- if (!is.null(game$periodDescriptor.periodType)) game$periodDescriptor.periodType else {print("Game Outcome Last Period Type Descriptor NA for game:"); print(game); NA}
+  period_desc <- if (!is.null(game$periodDescriptor.periodType)) game$periodDescriptor.periodType else {if (DEBUG_VERBOSE) {print("Game Outcome Last Period Type Descriptor NA for game:"); print(game)}; NA}
 
-    time_remaining <- if (!is.null(game$clock.timeRemaining)) {
-      game$clock.timeRemaining
-    } else {
-      NA  # No time remaining information or the game has not started
-    }
+  time_remaining <- if (!is.null(game$clock.timeRemaining)) {
+    game$clock.timeRemaining
+  } else {
+    NA  # No time remaining information or the game has not started
+  }
 
-    data.frame(
-      game_id,
-      game_start,
-      away,
-      away_record,
-      away_score,
-      away_sog,
-      home,
-      home_record,
-      home_score,
-      home_sog,
-      period,
-      time_remaining,
-      period_desc
-    )
-  })
+  data.frame(
+    game_id,
+    game_start,
+    away,
+    away_record,
+    away_score,
+    away_sog,
+    home,
+    home_record,
+    home_score,
+    home_sog,
+    period,
+    time_remaining,
+    period_desc
+  )
+})
 
   scoreboard_df <- do.call(rbind, scoreboard_df)
 
