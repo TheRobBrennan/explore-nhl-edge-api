@@ -8,7 +8,7 @@ library(lubridate)
 source("R/constants.R")
 
 # Function to fetch and process NHL Edge API data
-process_nhl_data <- function(source = "api", fileLocation = NULL) {
+process_nhl_data <- function(source = "api", fileLocation = NULL, EXECUTION_ATTEMPTS) {
   if (source == "api") {
     # print("Fetching data from the NHL Edge API")
     # Fetch data from the NHL Edge API
@@ -91,13 +91,25 @@ process_nhl_data <- function(source = "api", fileLocation = NULL) {
   })
 
   scoreboard_df <- do.call(rbind, scoreboard_df)
+
+  # Use the passed EXECUTION_ATTEMPTS for the execution count
+  scoreboard_df$consecutive_updates <- EXECUTION_ATTEMPTS
+
+  # [Rest of the existing content of process_nhl_data function]
   return(scoreboard_df)
 }
 
+# Check if EXECUTION_ATTEMPTS is passed and set a default if not
+EXECUTION_ATTEMPTS <- if (exists("EXECUTION_ATTEMPTS", envir = .GlobalEnv)) {
+  get("EXECUTION_ATTEMPTS", envir = .GlobalEnv)
+} else {
+  1  # Default value if not provided
+}
+
 # DEBUG: Load the data from a file instead of the API
-# scoreboard <- process_nhl_data(source = "file", fileLocation = "data/score-now-20231130.json")
+# scoreboard <- process_nhl_data(source = "file", fileLocation = "data/score-now-20231130.json", EXECUTION_ATTEMPTS = EXECUTION_ATTEMPTS)
 # View(scoreboard)
 
-# Run the process and display the data frame
-scoreboard <- process_nhl_data()
+# Call the process_nhl_data function with the EXECUTION_ATTEMPTS
+scoreboard <- process_nhl_data(EXECUTION_ATTEMPTS = EXECUTION_ATTEMPTS)
 View(scoreboard)

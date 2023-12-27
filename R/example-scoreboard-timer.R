@@ -28,7 +28,9 @@ while (TRUE) {
   }
   
   # Read in the source files
-  source(NHL_SCOREBOARD_SCRIPT)
+
+  # Pass EXECUTION_ATTEMPTS to scoreboard.R
+  source(NHL_SCOREBOARD_SCRIPT, local = new.env(list(EXECUTION_ATTEMPTS = EXECUTION_ATTEMPTS)))
 
   if (exists("scoreboard")) {
     # Check if the data frame contains at least one row of data (fixes a bug where a day range is specified where games do NOT exist - 2023.04.07 is an example)
