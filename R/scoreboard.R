@@ -77,16 +77,16 @@ scoreboard_df <- lapply(games, function(game) {
     game_id,
     game_start,
     away,
-    away_record,
     away_score,
-    away_sog,
-    home,
-    home_record,
     home_score,
-    home_sog,
+    home,
     period,
     time_remaining,
-    period_desc
+    period_desc,
+    away_record,
+    away_sog,
+    home_record,
+    home_sog
   )
 })
 
