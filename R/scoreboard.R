@@ -28,7 +28,6 @@ process_nhl_data <- function(source = "api", fileLocation = NULL, EXECUTION_ATTE
 # DEBUG_VERBOSE <- TRUE or FALSE
 
 scoreboard_df <- lapply(games, function(game) {
-  # NHL Gamecenter URL - https://www.nhl.com/gamecenter/<game_id>
   game_id <- if (!is.null(game$id)) game$id else {if (DEBUG_VERBOSE) {print("NHL ID NA for game:"); print(game)}; NA}
 
   utc_datetime <- if (!is.null(game$startTimeUTC)) ymd_hms(game$startTimeUTC) else {if (DEBUG_VERBOSE) {print("UTC DateTime NA for game:"); print(game)}; NA}
@@ -73,6 +72,16 @@ scoreboard_df <- lapply(games, function(game) {
     NA  # No time remaining information or the game has not started
   }
 
+  # Use the passed EXECUTION_ATTEMPTS for the execution count for each game
+  consecutive_updates <- EXECUTION_ATTEMPTS
+
+  # Construct the NHL Gamecenter URL - https://www.nhl.com/gamecenter/<game_id>
+  nhl_gamecenter_url <- if (!is.null(game_id)) {
+    paste0("https://www.nhl.com/gamecenter/", game_id)
+  } else {
+    NA  # Set as NA if game_id is null
+  }
+
   data.frame(
     game_id,
     game_start,
@@ -86,14 +95,13 @@ scoreboard_df <- lapply(games, function(game) {
     away_record,
     away_sog,
     home_record,
-    home_sog
+    home_sog,
+    consecutive_updates,
+    nhl_gamecenter_url
   )
 })
 
   scoreboard_df <- do.call(rbind, scoreboard_df)
-
-  # Use the passed EXECUTION_ATTEMPTS for the execution count
-  scoreboard_df$consecutive_updates <- EXECUTION_ATTEMPTS
 
   # [Rest of the existing content of process_nhl_data function]
   return(scoreboard_df)
