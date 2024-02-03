@@ -14,6 +14,8 @@ The base URL for the NHL Edge API is [https://api-web.nhle.com/v1/](https://api-
 
 The NHL Edge API is undocumented. However, there is a publicly available repository on GitHub at [https://github.com/Zmalski/NHL-API-Reference](https://github.com/Zmalski/NHL-API-Reference) that shares endpoints and data as discovered by other developers.
 
+This project is intended to be run locally. There is no publicly available demo.
+
 ## Project structure
 
 This project is primarily developed using [Posit RStudio IDE](https://posit.co/products/open-source/rstudio/) and [VS Code](https://code.visualstudio.com/) with the following structure:
