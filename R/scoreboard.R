@@ -15,7 +15,7 @@ process_nhl_data <- function(source = "api", fileLocation = NULL, EXECUTION_ATTE
     tryCatch(
       {
         # Fetch data from the NHL Edge API
-        response <- GET(NHL_EDGE_API_SCOREBOARD_URL, timeout(10)) # Setting a timeout of 10 seconds
+        response <- GET(NHL_EDGE_API_SCOREBOARD_URL, timeout(NHL_EDGE_API_TIMEOUT_IN_SECONDS))
         if (status_code(response) == 200) {
           data <- fromJSON(content(response, "text", encoding = "UTF-8"), flatten = TRUE)
         } else {
