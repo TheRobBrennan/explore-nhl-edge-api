@@ -10,15 +10,15 @@ library(jsonlite)
 library(dplyr)
 library(lubridate)
 
-THREE_MINUTES_IN_SECONDS <- 60 * 3
-DELAY_IN_SECONDS <- THREE_MINUTES_IN_SECONDS
 EXECUTION_ATTEMPTS <- 1
-EMPTY_SPACES <- "    "
-
-# Load scoreboards
-NHL_SCOREBOARD_SCRIPT <- sprintf("%s/R/scoreboard.R", getwd())
 
 while (TRUE) {
+  # Source the constants file
+  source("R/constants.R")
+
+  # Load scoreboards
+  NHL_SCOREBOARD_SCRIPT <- sprintf("%s/R/scoreboard.R", getwd())
+
   # Format Sys.time() to display with six-digit precision
   print(paste("Refreshing NHL scoreboard data at", format(Sys.time(), "%Y-%m-%d %H:%M:%OS6"), "- Attempt #", EXECUTION_ATTEMPTS))
 
@@ -26,7 +26,7 @@ while (TRUE) {
   if (exists("scoreboard")) {
     try(rm(scoreboard), silent = TRUE)
   }
-  
+
   # Read in the source files
 
   # Pass EXECUTION_ATTEMPTS to scoreboard.R
@@ -44,8 +44,9 @@ while (TRUE) {
   }
 
   # Wait for at least X seconds
-  Sys.sleep(DELAY_IN_SECONDS)
+  Sys.sleep(NHL_EDGE_API_DELAY_IN_SECONDS)
 
   # Increment our counter
   EXECUTION_ATTEMPTS <- EXECUTION_ATTEMPTS + 1
 }
+

@@ -9,23 +9,47 @@ source("R/constants.R")
 
 # Function to fetch and process NHL Edge API data
 process_nhl_data <- function(source = "api", fileLocation = NULL, EXECUTION_ATTEMPTS) {
+  data <- NULL # Initialize data as NULL to handle cases where data fetching fails
+
   if (source == "api") {
-    # print("Fetching data from the NHL Edge API")
-    # Fetch data from the NHL Edge API
-    response <- GET(NHL_EDGE_API_SCOREBOARD_URL)
-    data <- fromJSON(content(response, "text", encoding = "UTF-8"), flatten = TRUE)
+    
+    tryCatch(
+      {
+        # Fetch data from the NHL Edge API
+        response <- GET(NHL_EDGE_API_SCOREBOARD_URL, timeout(NHL_EDGE_API_TIMEOUT_IN_SECONDS))
+        if (status_code(response) == 200) {
+          data <- fromJSON(content(response, "text", encoding = "UTF-8"), flatten = TRUE)
+        } else {
+          stop(paste("API request failed with status code:", status_code(response)))
+        }
+      },
+      error = function(e) {
+        message <- paste(Sys.time(), "Error fetching data from the NHL Edge API:", e$message)
+        # Optionally, write the log to a file or take any other action
+        # Directly print the error message to the console for immediate visibility
+        message(sprintf("WARNING: %s", message))
+      },
+      warning = function(w) {
+        # Handle warnings explicitly if necessary
+        message <- paste(Sys.time(), "Warning:", w$message)
+        # Directly print the error message to the console for immediate visibility
+        message(sprintf("WARNING: %s", message))
+      }
+    )
   } else if (source == "file" && !is.null(fileLocation)) {
     print(paste("Loading data from", fileLocation, "instead of the NHL Edge API"))
-    # Read the JSON file
     data <- fromJSON(fileLocation, flatten = TRUE)
   } else {
     stop("Invalid data source or missing file location.")
   }
 
-  games <- list(data$games) # Assuming 'data' contains your example JSON structure
+  if (is.null(data)) {
+    return(data.frame()) # Return an empty data frame if data is NULL
+  }
 
   # Assuming DEBUG_VERBOSE is defined somewhere in your script
   # DEBUG_VERBOSE <- TRUE or FALSE
+  games <- list(data$games) # Assuming 'data' contains your example JSON structure
 
   scoreboard_df <- lapply(games, function(game) {
     game_id <- if (!is.null(game$id)) {
@@ -217,3 +241,4 @@ EXECUTION_ATTEMPTS <- if (exists("EXECUTION_ATTEMPTS", envir = .GlobalEnv)) {
 # Call the process_nhl_data function with the EXECUTION_ATTEMPTS
 scoreboard <- process_nhl_data(EXECUTION_ATTEMPTS = EXECUTION_ATTEMPTS)
 View(scoreboard)
+
