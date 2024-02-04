@@ -1,4 +1,3 @@
-
 # Installing the packages
 # install.packages("httr")
 # install.packages("jsonlite")
@@ -11,12 +10,12 @@ library(jsonlite)
 library(dplyr)
 library(lubridate)
 
-THREE_MINUTES_IN_SECONDS <- 60 * 3
-DELAY_IN_SECONDS <- THREE_MINUTES_IN_SECONDS
 EXECUTION_ATTEMPTS <- 1
-EMPTY_SPACES <- "    "
 
 while (TRUE) {
+  # Source the constants file
+  source("R/constants.R")
+
   # Load scoreboards
   NHL_SCOREBOARD_SCRIPT <- sprintf("%s/R/scoreboard.R", getwd())
 
@@ -45,7 +44,7 @@ while (TRUE) {
   }
 
   # Wait for at least X seconds
-  Sys.sleep(DELAY_IN_SECONDS)
+  Sys.sleep(NHL_EDGE_API_DELAY_IN_SECONDS)
 
   # Increment our counter
   EXECUTION_ATTEMPTS <- EXECUTION_ATTEMPTS + 1
