@@ -12,6 +12,7 @@ process_nhl_data <- function(source = "api", fileLocation = NULL, EXECUTION_ATTE
   data <- NULL # Initialize data as NULL to handle cases where data fetching fails
 
   if (source == "api") {
+    
     tryCatch(
       {
         # Fetch data from the NHL Edge API

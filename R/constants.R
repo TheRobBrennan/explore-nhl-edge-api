@@ -9,3 +9,4 @@ NHL_EDGE_API_BASE_URL <- "https://api-web.nhle.com/v1"
 NHL_EDGE_API_SCOREBOARD_URL <- paste0(NHL_EDGE_API_BASE_URL, "/score/now") # OR ... <- paste0(NHL_EDGE_API_BASE_URL, "/score/", todays_date)
 NHL_EDGE_API_TIMEOUT_IN_SECONDS <- 10
 NHL_EDGE_API_TIMEZONE <- "America/Los_Angeles"
+
