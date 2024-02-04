@@ -1,4 +1,4 @@
-# Set DEBUG_VERBOSE to true if you would like to see details logged to the console # nolint
+# Set DEBUG_VERBOSE to true if you would like to see details logged to the console
 DEBUG_VERBOSE <- FALSE
 EMPTY_SPACES <- "    "
 THREE_MINUTES_IN_SECONDS <- 60 * 3
@@ -10,4 +10,3 @@ NHL_EDGE_API_DELAY_IN_SECONDS <- THREE_MINUTES_IN_SECONDS
 NHL_EDGE_API_SCOREBOARD_URL <- paste0(NHL_EDGE_API_BASE_URL, "/score/", NHL_EDGE_API_DATE)
 NHL_EDGE_API_TIMEOUT_IN_SECONDS <- 10
 NHL_EDGE_API_TIMEZONE <- "America/Los_Angeles"
-
