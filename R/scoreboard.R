@@ -12,7 +12,6 @@ process_nhl_data <- function(source = "api", fileLocation = NULL, EXECUTION_ATTE
   data <- NULL # Initialize data as NULL to handle cases where data fetching fails
 
   if (source == "api") {
-    
     tryCatch(
       {
         # Fetch data from the NHL Edge API
@@ -236,9 +235,9 @@ EXECUTION_ATTEMPTS <- if (exists("EXECUTION_ATTEMPTS", envir = .GlobalEnv)) {
 
 # DEBUG: Load the data from a file instead of the API
 # scoreboard <- process_nhl_data(source = "file", fileLocation = "data/score-now-20231130.json", EXECUTION_ATTEMPTS = EXECUTION_ATTEMPTS)
+# scoreboard <- process_nhl_data(source = "file", fileLocation = "data/invalid_json.txt", EXECUTION_ATTEMPTS = EXECUTION_ATTEMPTS)
 # View(scoreboard)
 
 # Call the process_nhl_data function with the EXECUTION_ATTEMPTS
 scoreboard <- process_nhl_data(EXECUTION_ATTEMPTS = EXECUTION_ATTEMPTS)
 View(scoreboard)
-
