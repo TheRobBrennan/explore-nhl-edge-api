@@ -17,33 +17,44 @@ process_nhl_data <- function(source = "api", fileLocation = NULL, EXECUTION_ATTE
         # Fetch data from the NHL Edge API
         response <- GET(NHL_EDGE_API_SCOREBOARD_URL, timeout(NHL_EDGE_API_TIMEOUT_IN_SECONDS))
         if (status_code(response) == 200) {
-          data <- fromJSON(content(response, "text", encoding = "UTF-8"), flatten = TRUE)
+          content_text <- content(response, "text", encoding = "UTF-8")
+          tryCatch(
+            {
+              data <- fromJSON(content_text, flatten = TRUE)
+            },
+            error = function(e) {
+              cat(sprintf("%s - JSON parsing failed: %s\n", Sys.time(), e$message))
+              data <- NULL
+            }
+          )
         } else {
           stop(paste("API request failed with status code:", status_code(response)))
         }
       },
       error = function(e) {
-        message <- paste(Sys.time(), "Error fetching data from the NHL Edge API:", e$message)
-        # Optionally, write the log to a file or take any other action
-        # Directly print the error message to the console for immediate visibility
-        message(sprintf("WARNING: %s", message))
+        cat(sprintf("%s - Error fetching data from the NHL Edge API: %s\n", Sys.time(), e$message))
       },
       warning = function(w) {
-        # Handle warnings explicitly if necessary
-        message <- paste(Sys.time(), "Warning:", w$message)
-        # Directly print the error message to the console for immediate visibility
-        message(sprintf("WARNING: %s", message))
+        cat(sprintf("%s - Warning: %s\n", Sys.time(), w$message))
       }
     )
   } else if (source == "file" && !is.null(fileLocation)) {
-    print(paste("Loading data from", fileLocation, "instead of the NHL Edge API"))
-    data <- fromJSON(fileLocation, flatten = TRUE)
+    cat(paste("Loading data from", fileLocation, "instead of the NHL Edge API\n"))
+    tryCatch(
+      {
+        data <- fromJSON(fileLocation, flatten = TRUE)
+      },
+      error = function(e) {
+        cat(sprintf("%s - JSON parsing failed for file %s: %s\n", Sys.time(), fileLocation, e$message))
+        data <- NULL
+      }
+    )
   } else {
     stop("Invalid data source or missing file location.")
   }
 
-  if (is.null(data)) {
-    return(data.frame()) # Return an empty data frame if data is NULL
+  if (is.null(data) || is.null(data$games)) {
+    return(data.frame()) # Return an empty data frame if data is NULL or games are not present
   }
 
   # Assuming DEBUG_VERBOSE is defined somewhere in your script
