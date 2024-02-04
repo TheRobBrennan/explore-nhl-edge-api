@@ -241,3 +241,4 @@ EXECUTION_ATTEMPTS <- if (exists("EXECUTION_ATTEMPTS", envir = .GlobalEnv)) {
 # Call the process_nhl_data function with the EXECUTION_ATTEMPTS
 scoreboard <- process_nhl_data(EXECUTION_ATTEMPTS = EXECUTION_ATTEMPTS)
 View(scoreboard)
+
